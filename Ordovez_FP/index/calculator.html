@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/calculator.css">
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="icon" type="image/jpg" href="../pictures/calculatorIcon.jpg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <div class="backgroundImg-container">
+            <img class="backgroundImg" src="../pictures/bg.jpg" alt="Background">
+        </div>
+        <div class = "reminder-btn">
+            <img class = "notes" src = "../pictures/icons8-button-100.png"></img>
+        </div>
+        <div class ="overlay"></div>
+        <div class = "reminder-container">
+            <div class = "reminds">
+                <div class = "title">
+                    <p>Guide</p>
+                </div>
+                <div>
+                    <p class = "intro">Hello, this is a basic calculator. Used to calculate mathematical problem. Enjoy!</p>
+                </div>
+                <div class="key-features">
+                    <p class = "subtitle">Keys That can Be Pressed</p>
+                    <p><strong>v</strong> - Second Function</p>
+                    <p><strong>b</strong> - darkmode</p>
+                    <p><strong>backspace</strong> - delete recent number</p>
+                    <p><strong>delete</strong> - delete entire row</p>
+                    <p><strong>enter</strong> - calculate function</p>
+                    <p><strong>=</strong> - calculate function</p>
+                    <p><strong>ctrl + backspace</strong> = delete entire row</p>
+                    <p><strong>z</strong> - bring up notes</p>
+                    <p><strong>&#x28; and &#x29;</strong> - insert parenthesis</p>
+                    <p><strong>sin, cos etc.</strong> - to construct a FUNCTION</p>
+                </div>
+                <div class = "warning">
+                    <p class = "subtitle">Warning!</p>
+                    <p>If the input have this "&#x28;" e.g log&#x28;value. Always close the expression! e.g log&#x28;value&#x29;</p>
+                </div>
+            </div>
+        </div>
+        <div class = "modes">
+            <div class = "indicator"></div>
+        </div>
+        
+        <div class="container">
+            <div class="calculator-container">
+                <div class = "scnfunc"></div>
+                <div class="display">
+                    <span id = "displayed"></span>
+                </div>
+                <div class="input-container">
+                    <input id = "inputs" class="inputs" type="text" autocomplete="off" placeholder="0" disabled>
+                    <input id = "int" disabled>
+                </div>
+                <div class = "numbers-container">
+                    <div class="numbers">
+                        <p class = "btn" onclick="inputct('8')">8</p>
+                        <p class = "btn" onclick="inputct('7')">7</p>
+                        <p class = "btn" onclick="inputct('9')">9</p>
+                        <p onclick="del()" class="delbtn">DEL</p>
+                        <p class = "btn" onclick="inputct('4')">4</p>
+                        <p class = "btn" onclick="inputct('5')">5</p>
+                        <p class = "btn" onclick="inputct('6')">6</p>
+                        <p class = "btn" onclick="inputct('+')">+</p>
+                        <p class = "btn" onclick="inputct('1')">1</p>
+                        <p class = "btn" onclick="inputct('2')">2</p>
+                        <p class = "btn" onclick="inputct('3')">3</p>
+                        <p class = "btn" onclick="inputct('-')">-</p>
+                        <p class = "btn" onclick="inputct('.')">.</p>
+                        <p class = "btn" onclick="inputct('0')">0</p>
+                        <p class = "btn" onclick="inputct('/')">&#x00F7;</p>
+                        <p class = "btn" onclick="inputct('*')">&#xd7;</p>
+                        <p onclick="clearinputs()" class="clrbtn">CLEAR</p>
+                        <p class = "btn"onclick="ans()" class="relay">Ans</p>
+                        <p onclick="calculate()" class="equalbtn">=</p>
+                    </div>
+                </div>
+
+                <div class="numbers2-container">
+                    <div class = "numbers2">
+                        <p class = "btn" onclick="inputct('(')">&#x28;</p>
+                        <p class = "btn" onclick="inputct(')')">&#x29;</p>
+                        <p class = "btn" onclick="inputct('^(')">^</p>
+                        <p onclick="del()" class="delbtn">DEL</p>
+                        <p class = "btn" onclick="inputct('sqrt(')">&#x221A;</p>
+                        <p class = "btn" onclick="inputct('log(')">log</p>
+                        <p class = "btn" onclick="inputct('pi')">&pi;</p>
+                        <p class = "btn" onclick="inputct('+')">+</p>
+                        <p class = "btn" onclick="inputct('cos(')">cos</p>
+                        <p class = "btn" onclick="inputct('tan(')">tan</p>
+                        <p class = "btn" onclick="inputct('%')">%</p>
+                        <p class = "btn" onclick="inputct('-')">-</p>
+                        <p class = "btn" onclick="inputct('sin(')">sin</p>
+                        <p class = "btn" onclick="inputct('!')">!</p>
+                        <p class = "btn" onclick="inputct('/')">&#x00F7;</p>
+                        <p class = "btn" onclick="inputct('*')">&#xd7;</p>
+                        <p onclick="clearinputs()" class="clrbtn">CLEAR</p>
+                        <p class = "btn"onclick="ans()" class="relay">Ans</p>
+                        <p onclick="calculate()" class="equalbtn">=</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../script/calculator.js"></script>
+</body>
+</html>

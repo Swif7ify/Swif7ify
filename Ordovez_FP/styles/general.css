@@ -1,0 +1,18 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: monospace;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar
+{
+    display: none;
+}
+
+body
+{
+    height: 100vh;
+}
