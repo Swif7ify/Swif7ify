@@ -1,0 +1,1344 @@
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+
+int main()
+{
+	int age, choice;
+	float weight, height;
+	char name[100];
+	float bmi;
+	float cheight;
+	int intro, ntr, end;
+	backgroundcolor(WHITE);
+	textcolor(YELLOW);
+
+	clrscr();
+
+	here:
+
+	clrscr();
+
+	textcolor(LIGHTCYAN);
+
+	gotoxy(35,2);
+	cprintf("-->MENU<--\n\n");
+	cprintf("\r");
+
+	textcolor(YELLOW);
+
+	gotoxy(32,9);
+	cprintf("******************");
+	cprintf("\r");
+
+	gotoxy(32,14);
+	cprintf("******************");
+	cprintf("\r");
+
+	textcolor(LIGHTMAGENTA);
+
+	gotoxy(34,10);
+	cprintf("(1) About\n");
+	cprintf("\r");
+
+	gotoxy(34,11);
+	cprintf("(2) Members\n");
+	cprintf("\r" );
+
+	gotoxy(34,12);
+	cprintf("(3) Calculator\n");
+	cprintf("\r");
+
+	gotoxy(34,13);
+	cprintf("(4) Exit\n");
+	cprintf("\r");
+
+
+	textcolor(YELLOW);
+
+
+	if(scanf("%d", &intro)!=1)
+	{
+		clrscr();
+
+		textcolor(0xac);
+		gotoxy(25,13);
+		cprintf("Please Select Only 1, 2, 3 and 4");
+		cprintf("\r");
+		getch();
+		while(getchar()!='\n');
+
+		goto here;
+	}
+
+	if(intro==1)  //About Screen
+	{
+		clrscr();
+		gotoxy(38,1);
+
+		textcolor(LIGHTCYAN);
+
+		cprintf("About\n");
+		cprintf("\r");
+
+		printf("\n\n");
+
+		textcolor(YELLOW);
+
+		textcolor(LIGHTCYAN);
+
+		gotoxy(35,1);
+		cprintf("-->About<--\n");
+		cprintf("\r");
+		printf("\n\n");
+
+		textcolor(LIGHTGREEN);
+
+		delay(100);
+		gotoxy(29,5);
+		cprintf("About BMI Calculator\n\n");
+		cprintf("\r");
+
+		textcolor(YELLOW);
+
+		delay(50);
+		printf("Welcome to our BMI Calculator, your go-to tool for assessing your Body Mass\tIndex (BMI) and gaining insights into your overall health. Understanding your\tBMI is a crucial step in maintaining a healthy lifestyle and making informed\tdecisions about your well-being.");
+		printf("\n\n");
+
+		textcolor(LIGHTGREEN);
+
+		delay(100);
+		gotoxy(33,12);
+		cprintf("What is BMI?\n\n");
+		cprintf("\r");
+
+		textcolor(YELLOW);
+
+		delay(50);
+		printf("BMI is a numerical representation of your body composition based on your weight and height. It is a widely used indicator to assess whether you are underweight normal weight, overweight, or obese.");
+
+		textcolor(LIGHTGREEN);
+
+		printf("\t\n\n");
+
+		delay(100);
+		gotoxy(26,18);
+		cprintf("How to Use the BMI Calculator");
+		cprintf("\r\n\n");
+
+		textcolor(YELLOW);
+
+		delay(50);
+		printf("Using our user-friendly BMI calculator is quick and simple. Just input your\theight and weight, and let the calculator do the rest. The result will provide\tyou with your BMI score, along with its classification.");
+
+		printf("\n\n");
+
+		getch();
+		clrscr();
+
+
+		whatbmi:
+
+
+		clrscr();
+
+		textcolor(LIGHTCYAN);
+
+
+		gotoxy(35,1);
+		cprintf("-->About<--\n\n");
+		cprintf("\r");
+
+		textcolor(LIGHTGREEN);
+
+
+		gotoxy(31,10);
+		cprintf("BMI Classification\n\n");
+		cprintf("\r");
+
+		textcolor(LIGHTMAGENTA);
+
+		gotoxy(24,12);
+		cprintf("Underweight: ");
+
+		textcolor(YELLOW);
+
+		delay(100);
+		cprintf("BMI less than 18.5\n");
+		cprintf("\r");
+
+		textcolor(LIGHTMAGENTA);
+
+		gotoxy(24,13);
+		cprintf("Normal: ");
+
+		textcolor(YELLOW);
+
+		delay(100);
+		cprintf("     BMI 18.5 to 24.9\n");
+		cprintf("\r");
+
+		textcolor(LIGHTMAGENTA);
+
+		gotoxy(24,14);
+		cprintf("Overweight: ");
+
+		textcolor(YELLOW);
+
+		delay(100);
+		cprintf(" BMI 25 to 29.9\n");
+		cprintf("\r");
+
+		textcolor(LIGHTMAGENTA);
+
+		gotoxy(24,15);
+		cprintf("Obese: ");
+
+		textcolor(YELLOW);
+
+		delay(100);
+		cprintf("      BMI 30 and above\n");
+		cprintf("\r");
+
+
+		textcolor(LIGHTGREEN);
+
+		delay(100);
+		gotoxy(1,19);
+		cprintf("(1) Go back");
+		cprintf("\r");
+
+		delay(100);
+		gotoxy(1,20);
+		cprintf("(2) Continue\n");
+		cprintf("\r");
+
+		if(scanf("%d", &ntr)!=1)
+		{
+			clrscr();
+			textcolor(0xac);
+			
+			gotoxy(27,13);
+			cprintf("Please Select Only 1 and 2");
+			cprintf("\r");
+
+			while(getchar()!='\n');
+
+			getch();
+			clrscr();
+
+			goto whatbmi;
+		}
+
+		if(ntr==1)
+		{
+			goto here;
+		}
+		else if(ntr==2)
+		{
+			textcolor(YELLOW);
+			goto calculator;
+		}
+		else
+		{
+			textcolor(0xac);
+			clrscr();
+
+			gotoxy(27,13);
+			cprintf("\nPlease Select Only 1 and 2");
+			cprintf("\r");
+
+			while(getchar()!='\n');
+
+			getch();
+			clrscr();
+			
+			goto whatbmi;
+		}
+	}
+
+	else if(intro==2) //Members Screen
+	{
+
+		clrscr();
+
+		members:
+
+		textcolor(LIGHTCYAN);
+
+		gotoxy(37,1);
+		cprintf("Made By\n");
+		cprintf("\r");
+
+		textcolor(LIGHTCYAN);
+
+		gotoxy(32,2);
+		cprintf("CodeCrafters (CC)\n\n");
+		cprintf("\r");
+
+		delay(600);
+		gotoxy(29,4);
+
+		textcolor(GREEN);
+
+		cprintf("<--Lead Programmer-->\n ");
+		cprintf("\r");
+
+		textcolor(YELLOW);
+
+		delay(200);
+		gotoxy(29,5);
+		cprintf("Ordovez, Earl Romeo B.\n\n");
+		cprintf("\r");
+
+		delay(600);
+		gotoxy(31,7);
+
+		textcolor(GREEN);
+
+		cprintf("<--Programmers-->\n");
+		cprintf("\r");
+
+		textcolor(YELLOW);
+
+		delay(200);
+		gotoxy(28,8);
+		cprintf("Arcega, Franchesca Lei M.\n");
+		cprintf("\r");
+
+		delay(200);
+		gotoxy(29,9);
+		cprintf("De Jesus, Kharl Ryan M.\n");
+		cprintf("\r");
+
+		delay(200);
+		gotoxy(28,10);
+		cprintf("Gabriel, Mark Christian S.\n");
+		cprintf("\r");
+
+		delay(200);
+		gotoxy(27,11);
+		cprintf("Tamondong, Seann Patrick S.\n\n");
+		cprintf("\r");
+
+		delay(600);
+		gotoxy(32,13);
+
+		textcolor(GREEN);
+
+		cprintf("<--Debuggers-->\n");
+		cprintf("\r");
+
+		textcolor(YELLOW);
+
+		delay(200);
+		gotoxy(29,14);
+		cprintf("De Jesus, Kharl Ryan M.\n");
+		cprintf("\r");
+
+		delay(200);
+		gotoxy(28,15);
+		cprintf("Gabriel, Mark Christian S.\n\n");
+		cprintf("\r");
+
+		delay(600);
+		gotoxy(30,17);
+
+		textcolor(GREEN);
+
+		cprintf("<--Documentation-->\n");
+		cprintf("\r");
+		delay(200);
+
+		textcolor(YELLOW);
+
+		gotoxy(28,18);
+		cprintf("Arcega, Franchesca Lei M.\n\n");
+		cprintf("\r");
+
+		delay(600);
+		gotoxy(27,20);
+
+		textcolor(LIGHTMAGENTA);
+
+		cprintf("<--From Gordon College-->\n");
+		cprintf("\r");
+		delay(200);
+
+		textcolor(CYAN);
+
+		gotoxy(36,21);
+		cprintf("BSIT 1-A\n\n");
+		cprintf("\r");
+
+
+
+		textcolor(LIGHTGREEN);
+
+		delay(100);
+		cprintf("(1) Go back");
+		cprintf("\r");
+
+		delay(100);
+		cprintf("\n(2) Continue\n");
+		cprintf("\r");
+
+		if(scanf("%d", &ntr)!=1)
+		{
+			textcolor(0xac);			
+			clrscr();
+
+			gotoxy(27,13);
+			cprintf("Please Select Only 1 and 2");
+			cprintf("\r");
+
+			while(getchar()!='\n');
+
+			getch();
+			clrscr();
+
+			goto members;
+		}
+
+
+
+		if(ntr==1)
+		{
+			goto here;
+		}
+
+		else if(ntr==2)
+		{
+			textcolor(YELLOW);
+			goto calculator;
+		}
+
+		else
+		{
+			textcolor(0xac);
+			clrscr();
+
+			gotoxy(27,13);
+			cprintf("\nPlease Select Only 1 and 2");
+			cprintf("\r");
+
+			while(getchar()!='\n');
+
+			getch();
+			clrscr();
+			goto members;
+		}
+	}
+
+	else if(intro==3)  //The Calculator
+	{
+		goto calculator;
+	}
+
+	else if(intro==4)
+	{
+		goto exit;
+	}
+
+	else
+	{
+		textcolor(0xac);
+		clrscr();
+
+		gotoxy(25,13);
+		cprintf("Please Select Only 1, 2, 3 and 4\n");
+		cprintf("\r");
+
+		while(getchar()!='\n');
+		getch();
+
+		goto here;
+	}
+
+
+	calculator:
+
+
+	while(getchar()!='\n'); //This removes all Input
+
+	clrscr();
+
+	textcolor(LIGHTCYAN);
+
+	gotoxy (38,1);
+	cprintf("WELCOME\n");
+	cprintf("\r");
+
+	textcolor(LIGHTCYAN);
+
+	gotoxy (34,2);
+	cprintf("BMI CALCULATOR\n");
+	cprintf("\r");
+
+	textcolor(LIGHTCYAN);
+
+	gotoxy (30,3);
+	cprintf("TIPS AND CLASSIFICATION\n");
+	cprintf("\r");
+
+	printf("\n");
+
+	textcolor(YELLOW);
+
+
+	do //Informations
+	{	
+		cprintf("Enter Your Name: ");
+		fgets(name,100,stdin);
+
+		cprintf("Enter Your Age: ");
+		if(scanf("%d", &age)!=1)
+		{
+			clrscr();
+
+			textcolor(0xac);
+
+			gotoxy(25,13);
+			cprintf("Invalid Please Put Correct value\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+			while(getchar()!='\n');
+			goto calculator;
+
+		}
+
+		if(age==2000)
+		{
+			exit();
+		}
+
+		cprintf("Enter Your Weight (kg): ");
+
+		if(scanf("%f", &weight)!=1)
+		{
+			clrscr();
+
+			textcolor(0xac);
+
+			gotoxy(25,13);
+			cprintf("Invalid Please Put Correct value\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+			while(getchar()!='\n');
+			goto calculator;
+
+		}
+
+		cprintf("Enter Yor Height (cm): ");
+
+		if(scanf("%f", &height)!=1)
+		{
+			clrscr();
+
+			textcolor(0xac);
+
+			gotoxy(25,13);
+			cprintf("Invalid Please Put Correct value\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+			while(getchar()!='\n');
+			goto calculator;
+		}
+
+		break;
+	}
+	while(age !=1 && height !=1 && weight !=1); //Not necessary just to show process
+
+	clrscr();
+
+	confirm:
+
+	textcolor(LIGHTCYAN);
+
+	gotoxy (38,1);         //Display of information
+	cprintf("WELCOME\n");
+	cprintf("\r");
+
+	textcolor(LIGHTCYAN);
+
+	gotoxy (34,2);
+	cprintf("BMI CALCULATOR\n");
+	cprintf("\r");
+
+	textcolor(LIGHTCYAN);
+
+	gotoxy (30,3);
+	cprintf("TIPS AND CLASSIFICATION\n");
+	cprintf("\r");
+
+	textcolor(LIGHTRED);
+
+	gotoxy(33,6);
+	cprintf("Please Confirm!\n");
+	cprintf("\r");
+
+
+	textcolor(GREEN);
+
+	gotoxy(25,9);
+	cprintf("******************************\n");
+	cprintf("\r");
+
+	textcolor(YELLOW);
+
+	gotoxy(25,10);
+	cprintf("NAME: %s", name);
+	cprintf("\r");
+
+	gotoxy(25,11);
+	cprintf("AGE: %d\n", age);
+	cprintf("\r");
+
+	gotoxy(25,12);
+	cprintf("WEIGHT: %.2f\n", weight);
+	cprintf("\r");
+
+	gotoxy(25,13);
+	cprintf("HEIGHT: %.2f\n", height);
+	cprintf("\r");
+
+	textcolor(GREEN);
+
+	gotoxy(25,14);
+	cprintf("******************************");
+	cprintf("\r");
+
+	textcolor(LIGHTMAGENTA);
+
+	cprintf("\n\n\n\n\n|PRESS 1 TO CONTINUE|\n");
+	cprintf("\r");
+
+	cprintf("|PRESS 0 TO GO BACK|\n");
+	cprintf("\r");
+
+	scanf("%d", &choice);
+
+	if (choice == 0)
+	{
+		clrscr();
+		textcolor(YELLOW);
+		goto calculator;
+	}
+
+
+
+
+	else if (choice == 1)   //Calculations
+	{
+		clrscr();
+		cheight = height * 0.01;
+		bmi = weight / (cheight * cheight);
+
+		printf("\n\n\n");
+
+		printf("\nYour BMI: %f\n", bmi);
+
+		if (bmi < 18.5)  //for underweight
+		{
+			textcolor(LIGHTCYAN);
+
+			gotoxy (38,1);
+			cprintf("WELCOME\n");
+			cprintf("\r");
+
+			textcolor(LIGHTCYAN);
+
+			gotoxy (34,2);
+			cprintf("BMI CALCULATOR\n");
+			cprintf("\r");
+
+			textcolor(LIGHTCYAN);
+
+			gotoxy (30,3);
+			cprintf("TIPS AND CLASSIFICATION\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			printf("\n\n");
+
+			printf("UNDERWEIGHT\n");
+			printf("\n\n");
+
+			textcolor(0xe5);
+			cprintf("Press Enter to Continue...\n\n");
+
+			getch();
+			clrscr();
+
+			gotoxy(38,1);
+
+			textcolor(LIGHTCYAN);
+
+			cprintf("Tips\n");
+			cprintf("\r");
+
+			gotoxy(31,2);
+			cprintf("Classification: Underweight\n\n\n");
+			cprintf("\r");
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(26.5,5);
+			delay(100);
+			cprintf("--> Eat Nutrient-Dense Foods <--\n\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			delay(50);
+			cprintf("Focus on foods that are rich in nutrients, such as lean proteins, whole grains, healthy fats, fruits, and vegetables. These foods provide essential vitamins andminerals that support overall health.\n");
+
+			textcolor(LIGHTGREEN);
+			gotoxy(26,11);
+			delay(100);
+			cprintf("\n--> Increase Calorie Intake <--\n\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			delay(50);
+			cprintf("Include sources of healthy fats in your diet, such as avocados, nuts, seeds, andolive oil. These fats are calorie-dense and provide essential fatty acids necessary for various bodily functions.\n\n");
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(27.5,19);
+			delay(100);
+			cprintf("--> Eat More Frequently <--\n\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			delay(50);
+			cprintf("Instead of three large meals, consider eating smaller, more frequent meals      throughout the day. This can make it easier to increase your overall calorie    intake.\n\n");
+
+
+			getch();
+			clrscr();
+
+
+			gotoxy(38,1);
+
+			textcolor(LIGHTCYAN);
+
+			cprintf("Tips\n");
+			cprintf("\r");
+
+			gotoxy(31,2);
+			cprintf("Classification: Underweight\n\n\n");
+			cprintf("\r");
+
+			textcolor(LIGHTGREEN);
+			gotoxy(24,5);
+			delay(100);
+			cprintf("--> Include Protein-Rich Foods <--\n\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			delay(50);
+			cprintf("Protein is crucial for muscle development. Include sources of protein like lean meats, poultry, fish, eggs, dairy products, legumes, and plant-based protein    sources.\n\n");
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(30,11);
+
+			delay(100);
+			cprintf("--> Stay Hydrated <--\n\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			delay(50);
+			cprintf("Adequate hydration is essential for overall health. Drink water, milk, and otherhydrating beverages throughout the day, but avoid excessive consumption before  meals to prevent feeling overly full.\n\n");
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(28,18);
+
+			delay(100);
+			cprintf("--> Strenght Training <--\n\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			delay(50);
+			cprintf("Incorporate strength training exercises into your routine to build muscle mass. This can help ensure that the weight you gain is in the form of lean muscle     rather than just fat.\n\n");
+			getch();
+
+			underweight:
+			clrscr();
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(33,13);
+			cprintf("(1) Exit");
+			cprintf("\r");
+
+
+			gotoxy(33,14);
+			cprintf("(2) Calculator");
+
+			scanf("%d", &end);
+
+			if(end==1)
+			{
+				goto exit;
+			}
+
+			else if(end==2)
+			{
+				goto calculator;
+			}
+
+			else
+			{
+				textcolor(0xac);
+				clrscr();
+				
+				gotoxy(27,13);
+				cprintf("Please Select Only 1 and 2");
+				cprintf("\r");
+
+				while(getchar()!='\n');
+
+				getch();
+				goto underweight;
+			}
+		}
+
+		else if (bmi < 24.9)   //Normal weight
+		{
+			textcolor(LIGHTCYAN);
+
+			gotoxy (38,1);
+			cprintf("WELCOME\n");
+			cprintf("\r");
+
+			textcolor(LIGHTCYAN);
+
+			gotoxy (34,2);
+			cprintf("BMI CALCULATOR\n");
+			cprintf("\r");
+
+			textcolor(LIGHTCYAN);
+
+			gotoxy (30,3);
+			cprintf("TIPS AND CLASSIFICATION\n");
+			cprintf("\r");
+
+
+			textcolor(YELLOW);
+
+			printf("\n\n");
+
+			printf("NORMAL\n");
+			printf("\n\n");
+
+			textcolor(0xe5);
+			cprintf("Press Enter to Continue...\n\n");
+
+			getch();
+			clrscr();
+
+
+
+			textcolor(LIGHTCYAN);
+
+			gotoxy(38,1);
+			cprintf("Tips\n");
+			cprintf("\r");
+
+			gotoxy(31,2);
+			cprintf("Classification: Normal\n\n\n");
+			cprintf("\r");
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(31,5);
+
+			delay(100);
+			cprintf("--> Balanced Meal <--\n\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+			delay(50);
+			cprintf("Maintain regular and balanced meal times to support your metabolism and energy  levels. Aim for a combination of carbohydrates, proteins, and fats in each meal to sustain energy throughout the day.\n\n");
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(30,11);
+
+			delay(100);
+			cprintf("--> Eat Moderately <--\n\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			delay(50);
+			cprintf("Enjoy a variety of foods in moderation, including treats and indulgences. This  approach fosters a healthy relationship with food and allows for flexibility in your diet.\n\n");
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(30,17);
+
+			delay(100);
+			cprintf("--> Adequate Sleep <--\n\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			delay(50);
+			cprintf("Prioritize sufficient and quality sleep to support physical and mental health.  Establish a consistent sleep routine and create a conducive sleep environment   for restful nights.\n\n");
+
+			getch();
+
+			normal:
+
+			clrscr();
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(33,13);
+			cprintf("(1) Exit");
+			cprintf("\r");
+
+			gotoxy(33,14);
+			cprintf("(2) Calculator");
+
+			scanf("%d", &end);
+
+			if(end==1)
+			{
+				goto exit;
+			}
+
+			else if(end==2)
+			{
+				goto calculator;
+			}
+
+			else
+			{
+				textcolor(0xac);
+				clrscr();
+
+				gotoxy(27,13);
+				cprintf("Please Select Only 1 and 2");
+				cprintf("\r");
+
+				while(getchar()!='\n');
+
+				getch();
+				goto normal;
+			}
+		}
+
+		else if (bmi < 30)  //overweight
+		{
+			textcolor(LIGHTCYAN);
+
+			gotoxy (38,1);
+			cprintf("WELCOME\n");
+			cprintf("\r");
+
+			textcolor(LIGHTCYAN);
+
+			gotoxy (34,2);
+			cprintf("BMI CALCULATOR\n");
+			cprintf("\r");
+
+			textcolor(LIGHTCYAN);
+
+			gotoxy (30,3);
+			cprintf("TIPS AND CLASSIFICATION\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			printf("\n\n");
+
+			printf("OVERWEIGHT\n");
+			printf("\n\n");
+
+			textcolor(0xe5);
+			cprintf("Press Enter to Continue...\n\n");
+
+			getch();
+			clrscr();
+
+			gotoxy(38,1);
+
+			textcolor(LIGHTCYAN);
+
+			cprintf("Tips\n");
+			cprintf("\r");
+
+			gotoxy(31,2);
+			cprintf("Classification: Overweight\n\n\n");
+			cprintf("\r");
+
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(27,5);
+
+			delay(100);
+			cprintf("--> Mindful Eating Habits <--\n\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			delay(50);
+			cprintf("Pay attention to portion sizes and practice mindful eating. Listen to your      body's hunger and fullness cues, savor your meals, and avoid distractions to    prevent overeating.\n\n");
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(30,11);
+
+			delay(100);
+			cprintf("--> Balanced Diet <--\n\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			delay(50);
+			cprintf("Focus on a balanced diet with an emphasis on whole foods. Include a variety of  fruits, vegetables, lean proteins, and whole grains to ensure you meet your     nutritional needs while managing calorie intake.\n\n");
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(25,18);
+
+			delay(100);
+			cprintf("--> Regular Physical Activity <--\n\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			delay(50);
+			cprintf("Incorporate regular physical activity into your routine, choosing activities youenjoy. This helps with weight management, supports overall health, and          contributes to increased energy expenditure.\n\n");
+
+			getch();
+			clrscr();
+
+			gotoxy(38,1);
+
+			textcolor(LIGHTCYAN);
+
+			cprintf("Tips\n");
+			cprintf("\r");
+
+			gotoxy(31,2);
+			cprintf("Classification: Overweight\n\n\n");
+			cprintf("\r");
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(31,5);
+
+			delay(100);
+			cprintf("--> Adequate Sleep <--\n\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			delay(50);
+			cprintf("Prioritize sufficient and quality sleep. Lack of sleep can affect hormones that regulate hunger and satiety, potentially leading to overeating.\n\n");
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(31,12);
+
+			delay(100);
+			cprintf("--> Make A Change <--\n\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			delay(50);
+			cprintf("Implement gradual and sustainable changes in your lifestyle. Small, consistent  adjustments to your diet and exercise routine are more likely to lead to long   term success.\n\n");
+
+			getch();
+
+			overweight:
+
+			clrscr();
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(33,13);
+			cprintf("(1) Exit\n");
+			cprintf("\r");
+
+			gotoxy(33,14);
+			cprintf("(2) Calculator");
+
+
+			scanf("%d", &end);
+
+			if(end==1)
+			{
+				goto exit;
+			}
+
+			else if(end==2)
+			{
+				goto calculator;
+			}
+
+			else
+			{
+				textcolor(0xac);
+				clrscr();
+
+				gotoxy(27,13);
+				cprintf("Please Select Only 1 and 2");
+				cprintf("\r");
+
+				while(getchar()!='\n');
+
+				getch();
+				goto overweight;
+			}
+		}
+
+		else						//obese
+		{
+			textcolor(LIGHTCYAN);
+
+			gotoxy (38,1);
+			cprintf("WELCOME\n");
+			cprintf("\r");
+
+			textcolor(LIGHTCYAN);
+
+			gotoxy (34,2);
+			cprintf("BMI CALCULATOR\n");
+			cprintf("\r");
+
+			textcolor(LIGHTCYAN);
+
+			gotoxy (30,3);
+			cprintf("TIPS AND CLASSIFICATION\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			printf("\n\n");
+
+			printf("OBESE\n");
+			printf("\n\n");
+
+			textcolor(0xe5);
+			cprintf("Press Enter to Continue...\n\n");
+
+			getch();
+			clrscr();
+
+
+			textcolor(LIGHTCYAN);
+
+			gotoxy(38,1);
+			cprintf("Tips\n");
+			cprintf("\r");
+
+			gotoxy(31,2);
+			cprintf("Classification: Obese\n\n\n");
+			cprintf("\r");
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(25,5);
+
+			delay(100);
+			cprintf("--> Gradual Lifestyle Change <--\n\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			delay(50);
+			cprintf("Focus on making gradual and sustainable lifestyle changes. Small adjustments to your diet and physical activity over time can lead to lasting improvements in   weight management.\n\n");
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(30,11);
+
+			delay(100);
+			cprintf("--> Balanced Diet <--\n\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			delay(50);
+			cprintf("Prioritize a balanced and nutritious diet, incorporating plenty of fruits,      vegetables, lean proteins, and whole grains. Aim for moderation rather than     strict restriction to ensure a well-rounded intake of essential nutrients.\n\n");
+
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(25,18);
+
+			delay(100);
+			cprintf("--> Regular Physical Activity <--\n\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			delay(50);
+			cprintf("Incorporate regular exercise into your routine, choosing activities that you    enjoy and can sustain over the long term. Aim for a mix of cardiovascular       exercise and strength training to support overall health.\n\n");
+
+			getch();
+			clrscr();
+
+			gotoxy(38,1);
+
+			textcolor(LIGHTCYAN);
+
+			cprintf("Tips\n");
+			cprintf("\r");
+
+			gotoxy(31,2);
+			cprintf("Classification: Obese\n\n\n");
+			cprintf("\r");
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(30,5);
+			delay(100);
+			cprintf("--> Portion Control <--\n\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			delay(50);
+			cprintf("Pay attention to portion sizes and be mindful of serving sizes to avoid         overeating. Utilize smaller plates and bowls to help manage portion control     effectively.\n");
+
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(31,11);
+
+			delay(100);
+			cprintf("--> Stay hydrated <--\n\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			delay(50);
+			cprintf("Drink plenty of water throughout the day. Sometimes, thirst can be mistaken for hunger, and adequate hydration supports overall health and can assist in weight management.\n\n");
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(26,18);
+
+			delay(100);
+			cprintf("--> Seek Professional Support <--\n\n");
+			cprintf("\r");
+
+			textcolor(YELLOW);
+
+			delay(50);
+			cprintf("Consult with healthcare professionals, including a registered dietitian or a    doctor specializing in obesity management. They can provide personalized        guidance, support, and monitoring.\n\n");
+
+
+
+			getch();
+			clrscr();
+
+			gotoxy(38,1);
+
+			textcolor(LIGHTCYAN);
+
+			cprintf("Tips\n");
+			cprintf("\r");
+
+			gotoxy(31,2);
+			cprintf("Classification: Obese\n\n\n");
+			cprintf("\r");
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(31,5);
+
+			delay(100);
+			cprintf("--> Set a Goal <--\n\n");
+			cprintf("\r");
+			textcolor(YELLOW);
+
+			delay(50);
+			cprintf("Establish realistic and achievable goals for weight loss. Small, incremental    targets are more sustainable and can lead to long-term success.\n\n");
+
+			getch();
+
+			obese:
+
+			clrscr();
+
+			textcolor(LIGHTGREEN);
+
+			gotoxy(33,13);
+			cprintf("(1) Exit\n");
+			cprintf("\r");
+
+			gotoxy(33,14);
+			cprintf("(2) Calculator");
+
+
+			scanf("%d", &end);
+
+			if(end==1)
+			{
+				goto exit;
+			}
+
+			else if(end==2)
+			{
+				goto calculator;
+			}
+
+			else
+			{
+				textcolor(0xac);
+				clrscr();
+
+				gotoxy(27,13);
+				cprintf("Please Select Only 1 and 2");
+				cprintf("\r");
+
+				while(getchar()!='\n');
+
+				getch();
+				goto obese;
+			}
+		}
+	}
+
+	else
+	{
+
+		clrscr();
+		textcolor(0xac);
+
+		gotoxy(27,13);
+		cprintf("Please Select Only 1 and 2");
+		cprintf("\r");
+
+		while(getchar()!='\n');
+
+		getch();
+		clrscr();
+		goto confirm;
+	}
+
+	exit:
+
+	return 0;
+
+}
