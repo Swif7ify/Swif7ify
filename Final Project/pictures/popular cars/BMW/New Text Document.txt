@@ -1,0 +1,100 @@
+bmw z4
+bmw
+seating 2
+fuel petrol
+automatic
+₱3.99 Million
+250kph
+gearbox 8
+TwinPower Turbo 6-cylinder
+
+features
+Luxury sports convertible
+Turbocharged engine options
+Rear-wheel drive configuration
+Driver-focused cockpit design
+iDrive infotainment system with touchscreen
+Sport-tuned suspension for agile handling
+Retractable hardtop roof for convertible driving experience
+Sleek and athletic exterior design
+
+BMW 3 series
+BMW
+seating 5
+₱3.19 Million
+253 kmph
+fuel petrol
+automatic
+gearbox 8
+ 2.0-litre, four-cylinder turbo-petrol engine
+
+Features
+Compact luxury sedan
+Turbocharged engine options
+Rear-wheel drive or xDrive all-wheel drive
+Dynamic handling and precise steering
+Premium interior with high-quality materials
+Advanced infotainment system with touchscreen
+Comprehensive suite of driver assistance features
+Sporty exterior design with iconic kidney grille
+
+
+BMW 7 series
+bmw
+fuel diesel
+seating 5
+automatic
+gearbox 1
+250 kmph
+₱8.99 Million
+
+features
+Full-size luxury sedan
+Powerful engine lineup including hybrid option
+Rear-wheel drive or xDrive all-wheel drive
+Lavish interior with luxurious amenities
+iDrive infotainment system with gesture control
+Cutting-edge technology features like remote parking
+Smooth and comfortable ride quality
+Elegant and commanding exterior presence
+
+BMWx1
+BMW
+fuel diesel
+₱3.89 Million
+automatic
+gearbox 7z
+B47 twin-turbo I4
+219 kmph
+seating 5
+
+features
+Compact luxury crossover
+Turbocharged engine options
+Available xDrive all-wheel drive
+Spacious and versatile interior
+iDrive infotainment system with touchscreen
+Agile handling and responsive steering
+Elevated ride height for improved visibility
+Sleek and modern exterior design
+
+BMWx3
+BMW
+fuel petrol
+automatic
+seating 5
+₱3.89 Million
+ 2.0-liter inline-4 diesel engine
+gearbox 8
+250 kmph
+
+features
+Compact luxury SUV
+Turbocharged engine choices
+xDrive all-wheel drive standard
+Premium interior with ample passenger space
+iDrive infotainment system with intuitive interface
+Dynamic driving characteristics with optional M Sport package
+Off-road capabilities with available adaptive suspension
+Sporty and rugged exterior styling
+
