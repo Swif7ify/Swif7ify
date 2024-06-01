@@ -1,0 +1,88 @@
+.creatorbg
+{
+    height: 100%;
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100% ;
+    object-fit: cover;
+    object-position: center;
+}
+
+.creatorbg-container
+{
+    position: relative;
+}
+
+.creator-img-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 100vh;
+}
+
+.creator-img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    margin-top: 100px;
+    animation: fadeInFromLeft 0.80s forwards;
+}
+
+.creatorMessage-container
+{
+    display: flex;
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    width: 100% !important;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.creatorMessage
+{
+    display: flex;
+    height: 100% !important;
+    justify-content: center;
+    z-index: 100;
+    color: white;
+    animation: fadein 0.80s forwards;
+}
+
+.creatorMessage-text-container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 100%;
+    width: 100vw;
+}
+
+.creatorMessage-text
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    height: 100%;
+    width: 100%;
+    padding: 100px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.message
+{
+    display: flex;
+    justify-content: center;
+}

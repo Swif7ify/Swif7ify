@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "website icon" type="png" href = "../pictures/logos/ctlogo.png">
+    <link rel = "stylesheet" href= "../styles/index2/header.css">
+    <link rel = "stylesheet" href= "../styles/index2/general.css">
+    <link rel = "stylesheet" href= "../styles/index2/keyframes.css">
+    <link rel = "stylesheet" href= "../styles/index2/popularcarbody.css">
+    <link rel = "stylesheet" href= "../styles/index2/media.css">
+    <link rel = "stylesheet" href= "../styles/index1/keyframes.css">
+
+    <title>Cartify - Find Your Dream Car</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class = "header-container">
+                <div class = "header">
+                    <div class = "left-section">
+                        <div class = "hamburgeroverlay"></div>
+                        <div class = "hamburger-drpdwn">
+                            <div class="hamburger-menu-icon-container">
+                                <img onclick="rotateFull()" class = "hamburger-menu-icon" src = "../pictures/icons/hamburger-menu.svg">
+
+                                <div class = "hamburger-menu">
+                                    <p id="goToHome" onclick="window.location.href = ('index.html')">Home</p>
+                                    <p id = "goToAbout">About</p>
+                                    <p id = "goToServices">Services</p>
+                                    <p id = "goToCreator">Creator</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "headIcon-container">
+                            <p class = "headIcon" onclick="window.location.href = ('index2.html')">CARTIFY</p>
+                        </div>
+                    </div>
+                    <div class = "middle-section">
+                        <div>
+                            <button id = "popularcar" class = "active" onclick="popularcarsfp()">Popular Car</button>
+                        </div>
+                        <div>
+                            <button id = "compare" onclick="window.location.href = ('index4.html')">Compare Car</ button>
+                        </div>
+                        <div class = "middleRelative">
+                            <button class="selector1">Model</button>
+                        </div>
+
+                        <div class="middleRelative">
+                            <button id="selectcar" class = "selector2">Select Car</button>
+                        </div>
+                    </div>
+                    <div class="middleRelative">
+                        <div class="modelnavigation">
+                            <div id = "goToaudi" class = "barName">
+                                <img class = "modelLogos" src="../pictures/logos/icons8-audi.svg">
+                                <p>AUDI</p>
+                            </div>
+                            <div id = "goTobmw" class = "barName">
+                                <img class = "modelLogos" src="../pictures/logos/icons8-bmw.svg">
+                                <p>BMW</p>
+                            </div>
+                            <div id = "goTochevrolet" class = "barName">
+                                <img class = "modelLogos" src="../pictures/logos/icons8-chevrolet.svg">
+                                <p>CHEVROLET</p>
+                            </div>
+                            <div id = "goToferrari" class = "barName">
+                                <img class = "modelLogos" src="../pictures/logos/icons8-ferrari-500.svg">
+                                <p>FERRARI</p>
+                            </div>
+                            <div id = "goToford" class = "barName">
+                                <img class = "modelLogos" src="../pictures/logos/icons8-ford.svg">
+                                <p>FORD</p>
+                            </div>
+                            <div id = "goTohonda" class = "barName">
+                                <img class = "modelLogos" src="../pictures/logos/icons8-honda.svg">
+                                <p>HONDA</p>
+                            </div>
+                            <div id = "goTomercedes" class = "barName">
+                                <img class = "modelLogos" src="../pictures/logos/icons8-mercedes.svg">
+                                <p>MERCEDES</p>
+                            </div>
+                            <div id = "goTonissan" class = "barName">
+                                <img class = "modelLogos" src="../pictures/logos/icons8-nissan.svg">
+                                <p>NISSAN</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="middleRelative">
+                        <div class="selectcarnavigation">
+                            <div onclick="window.location.href = ('index3.html')" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/AUDI/audia3.jpg">
+                                <p>Audi A3</p>
+                            </div>
+                            <div id="pa4" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/AUDI/audia4.jpg">
+                                <p>Audi A4</p>
+                            </div>
+                            <div id="pa8" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/AUDI/audia8.jpg">
+                                <p>Audi A8</p>
+                            </div>
+                            <div id="pq5" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/AUDI/audiq5.webp">
+                                <p>Audi Q5</p>
+                            </div>
+                            <div id="pr8" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/AUDI/audir8.jpg">
+                                <p>Audi R8</p>
+                            </div>
+
+                            <div id="pbmw3" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/BMW/bmw3.webp">
+                                <p>BMW 3 Series</p>
+                            </div>
+                            <div id="pbmw7" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/BMW/BMW7.jpg">
+                                <p>BMW 7 Series</p>
+                            </div>
+                            <div id="px1" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/BMW/bmwx1.jpeg">
+                                <p>BMW X1</p>
+                            </div>
+                            <div id="px3" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/BMW/bmwx3.avif">
+                                <p>BMW X3</p>
+                            </div>
+                            <div id="pz4" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/BMW/bmwz4.webp">
+                                <p>BMW Z4</p>
+                            </div>
+
+                            <div id="pev" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/CHEVROLET/blazerev.webp">
+                                <p>Chevrolet Blazer EV</p>
+                            </div>
+                            <div id="pmalibu" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/CHEVROLET/chevroletmalibu.jpg">
+                                <p>Chevrolet Malibu</p>
+                            </div>
+                            <div id="pequinox" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/CHEVROLET/chevroletquinox.jpg">
+                                <p>Chevrolet Equinox</p>
+                            </div>
+                            <div id="pspark" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/CHEVROLET/chevroletspark.webp">
+                                <p>Chevrolet Spark</p>
+                            </div>
+                            <div id="peray" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/CHEVROLET/corvetteeray.avif">
+                                <p>Chevrolet Corvette E-Ray</p>
+                            </div>
+
+                            <div id="pportofino" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/FERRARI/ferrarifortifino.jpg">
+                                <p>Ferrari Portofino</p>
+                            </div>
+                            <div id="plusso" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/FERRARI/ferrarigtc4.webp">
+                                <p>Ferrari GTC4Lusso</p>
+                            </div>
+                            <div id="proma" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/FERRARI/ferrariroma.webp">
+                                <p>Ferrari Roma</p>
+                            </div>
+                            <div id="psuperfast" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/FERRARI/ferrarisuperfast.webp">
+                                <p>Ferrari 812 Superfast</p>
+                            </div>
+                            <div id="pcalifornia" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/FERRARI/ferrraricalifornia.jpg">
+                                <p>Ferrai California</p>
+                            </div>
+
+                            <div id="pescape" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/FORD/fordescape.jpg">
+                                <p>Ford Escape</p>
+                            </div>
+                            <div id="pfiesta" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/FORD/fordfiesta.jpg">
+                                <p>Ford Fiesta</p>
+                            </div>
+                            <div id="pfocus" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/FORD/fordfocus.jpg">
+                                <p>Ford Focus</p>
+                            </div>
+                            <div id="pfusion" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/FORD/fordfusion.webp">
+                                <p>Ford Fusion</p>
+                            </div>
+                            <div id="pmustanggt" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/FORD/fordmustanggt.jpg">
+                                <p>Ford Mustang GT</p>
+                            </div>
+
+                            <div id="paccord" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/HONDA/hondaaccord.jpg">
+                                <p>Honda Accord</p>
+                            </div>
+                            <div id="pcivic" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/HONDA/hondacivic.jpg">
+                                <p>Honda Civic</p>
+                            </div>
+                            <div id="pcrv" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/HONDA/hondacrev.jpg">
+                                <p>Honda CR-V</p>
+                            </div>
+                            <div id="pfit" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/HONDA/hondafit.jpg">
+                                <p>Honda Fit</p>
+                            </div>
+                            <div id="phrv" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/HONDA/hondahr.avif">
+                                <p>Honda HR-V</p>
+                            </div>
+
+                            <div id="paclass" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/MERCEDES/mercedesaclass.jpg">
+                                <p>Mercedes A Class</p>
+                            </div>
+                            <div id="pcclass" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/MERCEDES/mercedescclass.jpg">
+                                <p>Mercedes C Class</p>
+                            </div>
+                            <div id="pgla" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/MERCEDES/mercedesgla.jpeg">
+                                <p>Mercedes GLA</p>
+                            </div>
+                            <div id="pglc" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/MERCEDES/mercedesglc.jpg">
+                                <p>Mercedes GLC</p>
+                            </div>
+                            <div id="pw223" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/MERCEDES/mercedesw223.jpg">
+                                <p>Mercedes W223</p>
+                            </div>
+
+                            <div id="paltima" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/NISSAN/nissanaltima.jpg">
+                                <p>Nissan Altima</p>
+                            </div>
+                            <div id="pgtr" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/NISSAN/nissangtr.jpg">
+                                <p>Nissan GTR</p>
+                            </div>
+                            <div id="progue" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/NISSAN/nissanrogue.avif">
+                                <p>Nissan Rogue</p>
+                            </div>
+                            <div id="psentra" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/NISSAN/nissansentra.jpg">
+                                <p>Nissan Sentra</p>
+                            </div>
+                            <div id="pversa" class = "carImg-container">
+                                <img class = "selectImg" src = "../pictures/popular cars/NISSAN/nissanversa.webp">
+                                <p>Nissan Versa</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class = "right-section">
+                        <img onclick="rotateFull2()" id="dropdown" class = "hamburger-menu-icon" src = "../pictures/icons/hamburger-menu.svg">
+                        <div class = "menu">
+                            <p onclick="window.location.href = ('index2.html')">Popular Car</p>
+                            <p onclick="window.location.href = ('index4.html')">Compare Car</p>
+                            <p id="drpmodel">Model</p>
+                            <p id="drpselect">Select Car</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header> 
+     
+        <main>
+            <div class = "popular-cars-head-container">
+                <p class = "popular-cars-head">Popular Cars</p>
+                <p class = "popular-cars-sub-head">Amazing Cars! - Choose Now</p>
+            </div>
+            <div class = "p1 active DC" id = "p1">
+                <div class = "popular-cars-grid">
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/AUDI/audia3.jpg">
+                        <div class = "overlay" onclick = "window.location.href = ('index3.html')"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Audi A3</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 250kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.51 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Audi A3</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/AUDI/audia4.jpg">
+                        <div class = "overlay" id = "a4"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Audi A4</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 241kp/h</p>
+                            <p class = "subheadcarName">Price: ₱3.45 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Audi A4</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/AUDI/audiq5.webp">
+                        <div class = "overlay" id = "q5"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Audi Q5</p>
+                            <p class = "subheadcarName">Year: 2023</p>
+                            <p class = "subheadcarName">Max Speed: 237kp/h</p>
+                            <p class = "subheadcarName">Price: ₱5.65 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Audi Q5</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/AUDI/audia8.jpg">
+                        <div class = "overlay" id = "a8"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Audi A8</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 250kp/h</p>
+                            <p class = "subheadcarName">Price: ₱8.99 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Audi A8</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/BMW/bmwx1.jpeg">
+                        <div class = "overlay" id = "x1"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">BMW X1</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 219kp/h</p>
+                            <p class = "subheadcarName">Price: ₱3.89 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>BMW X1</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/BMW/bmw3.webp">
+                        <div class = "overlay" id = "bmw3"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">BMW 3 Series</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 253kp/h</p>
+                            <p class = "subheadcarName">Price: ₱3.19 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>BMW 3 Series</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "p2 DC" id="p2">
+                <div class = "popular-cars-grid">
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/BMW/BMW7.jpg">
+                        <div class = "overlay" id = "bmw7"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">BMW 7 Series</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 250kp/h</p>
+                            <p class = "subheadcarName">Price: ₱8.99 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>BMW 7 Series</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/AUDI/audir8.jpg">
+                        <div class = "overlay" id = "r8"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Audi R8</p>
+                            <p class = "subheadcarName">Year: 2006</p>
+                            <p class = "subheadcarName">Max Speed: 330kp/h</p>
+                            <p class = "subheadcarName">Price: ₱17.5 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Audi R8</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/BMW/bmwx3.avif">
+                        <div class = "overlay" id = "x3"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">BMW X3</p>
+                            <p class = "subheadcarName">Year: 2022</p>
+                            <p class = "subheadcarName">Max Speed: 250kp/h</p>
+                            <p class = "subheadcarName">Price: ₱3.89 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>BMW X3</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/CHEVROLET/chevroletspark.webp">
+                        <div class = "overlay" id = "spark"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Chevrolet Spark</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 143kp/h</p>
+                            <p class = "subheadcarName">Price: ₱694,888</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Chevrolet Spark</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/NISSAN/nissanrogue.avif">
+                        <div class = "overlay" id = "rogue"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Nissan Rogue</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 187kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.618 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Nissan Rogue</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/CHEVROLET/chevroletmalibu.jpg">
+                        <div class = "overlay" id = "malibu"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Chevrolet Malibu</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 210kp/h</p>
+                            <p class = "subheadcarName">Price: ₱2.132 Million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Chevrolet Malibu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "p3 DC" id ="p3">
+                <div class = "popular-cars-grid">
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/MERCEDES/mercedesglc.jpg">
+                        <div class = "overlay" id = "glc"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Mercedes-Benz GLC</p>
+                            <p class = "subheadcarName">Year: 2023</p>
+                            <p class = "subheadcarName">Max Speed: 221kp/h</p>
+                            <p class = "subheadcarName">Price: 2.1 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Mercedes GLC 200</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/BMW/bmwz4.webp">
+                        <div class = "overlay" id = "z4"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">BMW Z4</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 250kp/h</p>
+                            <p class = "subheadcarName">Price: ₱5.89 Million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>BMW Z4</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/CHEVROLET/corvetteeray.avif">
+                        <div class = "overlay" id = "eray"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Corvette E-Ray</p>
+                            <p class = "subheadcarName">Year: 2023</p>
+                            <p class = "subheadcarName">Max Speed: 295kp/h</p>
+                            <p class = "subheadcarName">Price: ₱12.572 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Corvette E-Ray</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/FERRARI/ferrarifortifino.jpg">
+                        <div class = "overlay" id = "portofino"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Ferrari Portofino</p>
+                            <p class = "subheadcarName">Year: 2023</p>
+                            <p class = "subheadcarName">Max Speed: 320kp/h</p>
+                            <p class = "subheadcarName">Price: ₱11.8 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Ferrari Portofino</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/NISSAN/nissanaltima.jpg">
+                        <div class = "overlay" id = "altima"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Nissan Altima</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 209kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.858 Million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Nissan Altima</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/FERRARI/ferrariroma.webp">
+                        <div class = "overlay" id = "roma"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Ferrari Roma</p>
+                            <p class = "subheadcarName">Year: 2019</p>
+                            <p class = "subheadcarName">Max Speed: 320kp/h</p>
+                            <p class = "subheadcarName">Price: ₱29.5 Million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Ferrari Roma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "p4 DC" id="p4">
+                <div class = "popular-cars-grid">
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/CHEVROLET/chevroletquinox.jpg">
+                        <div class = "overlay" id = "equinox"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Chevrolet Equinox</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 195kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.948 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Chevrolet Equinox</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/FERRARI/ferrraricalifornia.jpg">
+                        <div class = "overlay" id = "california"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Ferrari California</p>
+                            <p class = "subheadcarName">Year: 2017</p>
+                            <p class = "subheadcarName">Max Speed: 310kp/h</p>
+                            <p class = "subheadcarName">Price: ₱6.595 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Ferrari California</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/HONDA/hondaaccord.jpg">
+                        <div class = "overlay" id = "accord"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Honda Accord</p>
+                            <p class = "subheadcarName">Year: 2017</p>
+                            <p class = "subheadcarName">Max Speed: 186kp/h</p>
+                            <p class = "subheadcarName">Price: ₱2.288 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Honda Accord</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/FORD/fordfiesta.jpg">
+                        <div class = "overlay" id = "fiesta"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Ford Fiesta</p>
+                            <p class = "subheadcarName">Year: 2019</p>
+                            <p class = "subheadcarName">Max Speed: 190kp/h</p>
+                            <p class = "subheadcarName">Price: ₱755,000</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Ford Fiesta</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/CHEVROLET/blazerev.webp">
+                        <div class = "overlay" id = "ev"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Chevrolet Blazer EV</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 210kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.702 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Chevrolet Blazer EV</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/FORD/fordfusion.webp">
+                        <div class = "overlay" id = "fusion"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Ford Fusion</p>
+                            <p class = "subheadcarName">Year: 2020</p>
+                            <p class = "subheadcarName">Max Speed: 281kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.373 Million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Ford Fusion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "p5 DC" id="p5">
+                <div class = "popular-cars-grid">
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/HONDA/hondahr.avif">
+                        <div class = "overlay" id = "hrv"></div>
+                        <div class ="tooltip" id = "hrv">
+                            <p class = "headcarName">Honda HR-V</p>
+                            <p class = "subheadcarName">Year: 2023</p>
+                            <p class = "subheadcarName">Max Speed: 185kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.389 Million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Honda HR-V</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/MERCEDES/mercedesw223.jpg">
+                        <div class = "overlay" id = "w223"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Mercedes-Benz W223</p>
+                            <p class = "subheadcarName">Year: 2020</p>
+                            <p class = "subheadcarName">Max Speed: 250kp/h</p>
+                            <p class = "subheadcarName">Price: ₱3.05 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Mercedes W223</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/NISSAN/nissansentra.jpg">
+                        <div class = "overlay" id = "sentra"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Nissan Sentra</p>
+                            <p class = "subheadcarName">Year: 2023</p>
+                            <p class = "subheadcarName">Max Speed: 200kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.214 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Nissan Sentra</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/FERRARI/ferrarigtc4.webp">
+                        <div class = "overlay" id = "lusso"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Ferrari GTC4Lusso</p>
+                            <p class = "subheadcarName">Year: 2021</p>
+                            <p class = "subheadcarName">Max Speed: 335kp/h</p>
+                            <p class = "subheadcarName">Price: ₱16.04 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Ferrari GTC4Lusso</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/HONDA/hondafit.jpg">
+                        <div class = "overlay" id = "fit"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Honda Fit</p>
+                            <p class = "subheadcarName">Year: 2020</p>
+                            <p class = "subheadcarName">Max Speed: 204kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.65 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Honda Fit</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/FORD/fordmustanggt.jpg">
+                        <div class = "overlay" id = "mustanggt"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Ford Mustang GT</p>
+                            <p class = "subheadcarName">Year: 2023</p>
+                            <p class = "subheadcarName">Max Speed: 250kp/h</p>
+                            <p class = "subheadcarName">Price: ₱3.999 Million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Ford Mustang GT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "p6 DC" id ="p6">
+                <div class = "popular-cars-grid">
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/MERCEDES/mercedesaclass.jpg">
+                        <div class = "overlay" id = "aclass"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Mercedes-Benz A-Class</p>
+                            <p class = "subheadcarName">Year: 2018</p>
+                            <p class = "subheadcarName">Max Speed: 225kp/h</p>
+                            <p class = "subheadcarName">Price: ₱5.19 Million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Mercedes A-Class</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/MERCEDES/mercedescclass.jpg">
+                        <div class = "overlay" id = "cclass"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Mercedes-Benz C-Class Sedan</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 209kp/h</p>
+                            <p class = "subheadcarName">Price: ₱3.99 Million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Mercedes-Benz C-Class</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/MERCEDES/mercedesgla.jpeg">
+                        <div class = "overlay" id = "gla"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Mercedes-Benz GLA</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 219kp/h</p>
+                            <p class = "subheadcarName">Price: ₱3.8 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p> Mercedes GLA</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/FERRARI/ferrarisuperfast.webp">
+                        <div class = "overlay" id = "superfast"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Ferrari 812 Superfast</p>
+                            <p class = "subheadcarName">Year: 2017</p>
+                            <p class = "subheadcarName">Max Speed: 340kp/h</p>
+                            <p class = "subheadcarName">Price: ₱39.09 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Ferrari 812 Superfast</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/FORD/fordescape.jpg">
+                        <div class = "overlay" id = "escape"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Ford Escape</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 200kp/h</p>
+                            <p class = "subheadcarName">Price: ₱650,000</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Ford Escape</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/HONDA/hondacrev.jpg">
+                        <div class = "overlay" id = "crv"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Honda CR-V </p>
+                            <p class = "subheadcarName">Year: 2023</p>
+                            <p class = "subheadcarName">Max Speed: 314kp/h</p>
+                            <p class = "subheadcarName">Price: 2.1 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Honda CR-V </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "p7 DC" id="p7">
+                <div class = "popular-cars-grid">
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/NISSAN/nissangtr.jpg">
+                        <div class = "overlay" id = "gtr"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Nissan GT-R</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 319kp/h</p>
+                            <p class = "subheadcarName">Price: ₱12.445 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Nissan GT-R</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/FORD/fordfocus.jpg">
+                        <div class = "overlay" id = "focus"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Ford Focus</p>
+                            <p class = "subheadcarName">Year: 2023</p>
+                            <p class = "subheadcarName">Max Speed: 252kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.04 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Ford Focus</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/HONDA/hondacivic.jpg">
+                        <div class = "overlay" id = "civic"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Honda Civic</p>
+                            <p class = "subheadcarName">Year: 2021</p>
+                            <p class = "subheadcarName">Max Speed: 220kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.583 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Honda Civic</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/NISSAN/nissanversa.webp">
+                        <div class = "overlay" id = "versa"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Nissan Versa</p>
+                            <p class = "subheadcarName">Year: 2019</p>
+                            <p class = "subheadcarName">Max Speed: 192kp/h</p>
+                            <p class = "subheadcarName">Price: 2.409 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Nissan Versa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "modelcontainer">
+                <div class = "popular-cars-grid">
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/AUDI/audia3.jpg">
+                        <div class = "overlay" onclick = "window.location.href = ('index3.html')"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Audi A3</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 250kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.51 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Audi A3</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/AUDI/audia4.jpg">
+                        <div class = "overlay" id = "sa4"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Audi A4</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 241kp/h</p>
+                            <p class = "subheadcarName">Price: ₱3.45 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Audi A4</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/AUDI/audiq5.webp">
+                        <div class = "overlay" id = "sq5"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Audi Q5</p>
+                            <p class = "subheadcarName">Year: 2023</p>
+                            <p class = "subheadcarName">Max Speed: 237kp/h</p>
+                            <p class = "subheadcarName">Price: ₱5.65 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Audi Q5</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/AUDI/audia8.jpg">
+                        <div class = "overlay" id = "sa8"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Audi A8</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 250kp/h</p>
+                            <p class = "subheadcarName">Price: ₱8.99 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Audi A8</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/AUDI/audir8.jpg">
+                        <div class = "overlay" id = "sr8"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Audi R8</p>
+                            <p class = "subheadcarName">Year: 2006</p>
+                            <p class = "subheadcarName">Max Speed: 330kp/h</p>
+                            <p class = "subheadcarName">Price: ₱17.5 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Audi R8</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "modelcontainer">
+                <div class = "popular-cars-grid">
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/BMW/bmwx1.jpeg">
+                        <div class = "overlay" id = "sx1"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">BMW X1</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 219kp/h</p>
+                            <p class = "subheadcarName">Price: ₱3.89 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>BMW X1</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/BMW/bmw3.webp">
+                        <div class = "overlay" id = "sbmw3"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">BMW 3 Series</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 253kp/h</p>
+                            <p class = "subheadcarName">Price: ₱3.19 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>BMW 3 Series</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/BMW/BMW7.jpg">
+                        <div class = "overlay" id = "sbmw7"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">BMW 7 Series</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 250kp/h</p>
+                            <p class = "subheadcarName">Price: ₱8.99 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>BMW 7 Series</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/BMW/bmwx3.avif">
+                        <div class = "overlay" id = "sx3"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">BMW X3</p>
+                            <p class = "subheadcarName">Year: 2022</p>
+                            <p class = "subheadcarName">Max Speed: 250kp/h</p>
+                            <p class = "subheadcarName">Price: ₱3.89 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>BMW X3</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/BMW/bmwz4.webp">
+                        <div class = "overlay" id = "sz4"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">BMW Z4</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 250kp/h</p>
+                            <p class = "subheadcarName">Price: ₱5.89 Million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>BMW Z4</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class = "modelcontainer">
+                <div class = "popular-cars-grid">
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/CHEVROLET/chevroletspark.webp">
+                        <div class = "overlay" id = "sspark"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Chevrolet Spark</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 143kp/h</p>
+                            <p class = "subheadcarName">Price: ₱694,888</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Chevrolet Spark</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/CHEVROLET/chevroletmalibu.jpg">
+                        <div class = "overlay" id = "smalibu"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Chevrolet Malibu</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 210kp/h</p>
+                            <p class = "subheadcarName">Price: ₱2.132 Million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Chevrolet Malibu</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/CHEVROLET/corvetteeray.avif">
+                        <div class = "overlay" id = "seray"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Corvette E-Ray</p>
+                            <p class = "subheadcarName">Year: 2023</p>
+                            <p class = "subheadcarName">Max Speed: 295kp/h</p>
+                            <p class = "subheadcarName">Price: ₱12.572 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Corvette E-Ray</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/CHEVROLET/chevroletquinox.jpg">
+                        <div class = "overlay" id = "sequinox"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Chevrolet Equinox</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 195kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.948 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Chevrolet Equinox</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/CHEVROLET/blazerev.webp">
+                        <div class = "overlay" id = "sev"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Chevrolet Blazer EV</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 210kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.702 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Chevrolet Blazer EV</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "modelcontainer">
+                <div class = "popular-cars-grid">
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/FERRARI/ferrarifortifino.jpg">
+                        <div class = "overlay" id = "sportofino"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Ferrari Portofino</p>
+                            <p class = "subheadcarName">Year: 2023</p>
+                            <p class = "subheadcarName">Max Speed: 320kp/h</p>
+                            <p class = "subheadcarName">Price: ₱11.8 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Ferrari Portofino</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/FERRARI/ferrariroma.webp">
+                        <div class = "overlay" id = "sroma"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Ferrari Roma</p>
+                            <p class = "subheadcarName">Year: 2019</p>
+                            <p class = "subheadcarName">Max Speed: 320kp/h</p>
+                            <p class = "subheadcarName">Price: ₱29.5 Million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Ferrari Roma</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/FERRARI/ferrraricalifornia.jpg">
+                        <div class = "overlay" id = "scalifornia"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Ferrari California</p>
+                            <p class = "subheadcarName">Year: 2017</p>
+                            <p class = "subheadcarName">Max Speed: 310kp/h</p>
+                            <p class = "subheadcarName">Price: ₱6.595 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Ferrari California</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/FERRARI/ferrarigtc4.webp">
+                        <div class = "overlay" id = "slusso"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Ferrari GTC4Lusso</p>
+                            <p class = "subheadcarName">Year: 2021</p>
+                            <p class = "subheadcarName">Max Speed: 335kp/h</p>
+                            <p class = "subheadcarName">Price: ₱16.04 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Ferrari GTC4Lusso</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/FERRARI/ferrarisuperfast.webp">
+                        <div class = "overlay" id = "ssuperfast"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Ferrari 812 Superfast</p>
+                            <p class = "subheadcarName">Year: 2017</p>
+                            <p class = "subheadcarName">Max Speed: 340kp/h</p>
+                            <p class = "subheadcarName">Price: ₱39.09 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Ferrari 812 Superfast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "modelcontainer">
+                <div class = "popular-cars-grid">
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/FORD/fordfiesta.jpg">
+                        <div class = "overlay" id = "sfiesta"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Ford Fiesta</p>
+                            <p class = "subheadcarName">Year: 2019</p>
+                            <p class = "subheadcarName">Max Speed: 190kp/h</p>
+                            <p class = "subheadcarName">Price: ₱755,000</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Ford Fiesta</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/FORD/fordfusion.webp">
+                        <div class = "overlay" id = "sfusion"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Ford Fusion</p>
+                            <p class = "subheadcarName">Year: 2020</p>
+                            <p class = "subheadcarName">Max Speed: 281kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.373 Million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Ford Fusion</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/FORD/fordmustanggt.jpg">
+                        <div class = "overlay" id = "smustanggt"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Ford Mustang GT</p>
+                            <p class = "subheadcarName">Year: 2023</p>
+                            <p class = "subheadcarName">Max Speed: 250kp/h</p>
+                            <p class = "subheadcarName">Price: ₱3.999 Million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Ford Mustang GT</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/FORD/fordescape.jpg">
+                        <div class = "overlay" id = "sescape"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Ford Escape</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 200kp/h</p>
+                            <p class = "subheadcarName">Price: ₱650,000</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Ford Escape</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/FORD/fordfocus.jpg">
+                        <div class = "overlay" id = "sfocus"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Ford Focus</p>
+                            <p class = "subheadcarName">Year: 2023</p>
+                            <p class = "subheadcarName">Max Speed: 252kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.04 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Ford Focus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "modelcontainer">
+                <div class = "popular-cars-grid">
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/HONDA/hondaaccord.jpg">
+                        <div class = "overlay" id = "saccord"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Honda Accord</p>
+                            <p class = "subheadcarName">Year: 2017</p>
+                            <p class = "subheadcarName">Max Speed: 186kp/h</p>
+                            <p class = "subheadcarName">Price: ₱2.288 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Honda Accord</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/HONDA/hondahr.avif">
+                        <div class = "overlay" id = "shrv"></div>
+                        <div class ="tooltip" id = "hrv">
+                            <p class = "headcarName">Honda HR-V</p>
+                            <p class = "subheadcarName">Year: 2023</p>
+                            <p class = "subheadcarName">Max Speed: 185kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.389 Million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Honda HR-V</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/HONDA/hondafit.jpg">
+                        <div class = "overlay" id = "sfit"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Honda Fit</p>
+                            <p class = "subheadcarName">Year: 2020</p>
+                            <p class = "subheadcarName">Max Speed: 204kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.65 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Honda Fit</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/HONDA/hondacrev.jpg">
+                        <div class = "overlay" id = "scrv"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Honda CR-V </p>
+                            <p class = "subheadcarName">Year: 2023</p>
+                            <p class = "subheadcarName">Max Speed: 314kp/h</p>
+                            <p class = "subheadcarName">Price: 2.1 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Honda CR-V </p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/HONDA/hondacivic.jpg">
+                        <div class = "overlay" id = "scivic"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Honda Civic</p>
+                            <p class = "subheadcarName">Year: 2021</p>
+                            <p class = "subheadcarName">Max Speed: 220kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.583 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Honda Civic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "modelcontainer">
+                <div class = "popular-cars-grid">
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/MERCEDES/mercedesglc.jpg">
+                        <div class = "overlay" id = "sglc"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Mercedes-Benz GLC</p>
+                            <p class = "subheadcarName">Year: 2023</p>
+                            <p class = "subheadcarName">Max Speed: 221kp/h</p>
+                            <p class = "subheadcarName">Price: 2.1 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Mercedes GLC 200</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/MERCEDES/mercedesw223.jpg">
+                        <div class = "overlay" id = "sw223"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Mercedes-Benz W223</p>
+                            <p class = "subheadcarName">Year: 2020</p>
+                            <p class = "subheadcarName">Max Speed: 250kp/h</p>
+                            <p class = "subheadcarName">Price: ₱3.05 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Mercedes W223</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/MERCEDES/mercedesaclass.jpg">
+                        <div class = "overlay" id = "saclass"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Mercedes-Benz A-Class</p>
+                            <p class = "subheadcarName">Year: 2018</p>
+                            <p class = "subheadcarName">Max Speed: 225kp/h</p>
+                            <p class = "subheadcarName">Price: ₱5.19 Million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Mercedes A-Class</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/MERCEDES/mercedescclass.jpg">
+                        <div class = "overlay" id = "scclass"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Mercedes-Benz C-Class Sedan</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 209kp/h</p>
+                            <p class = "subheadcarName">Price: ₱3.99 Million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Mercedes-Benz C-Class</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/MERCEDES/mercedesgla.jpeg">
+                        <div class = "overlay" id = "sgla"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Mercedes-Benz GLA</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 219kp/h</p>
+                            <p class = "subheadcarName">Price: ₱3.8 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p> Mercedes GLA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "modelcontainer">
+                <div class = "popular-cars-grid">
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/NISSAN/nissanrogue.avif">
+                        <div class = "overlay" id = "srogue"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Nissan Rogue</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 187kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.618 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Nissan Rogue</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/NISSAN/nissanaltima.jpg">
+                        <div class = "overlay" id = "saltima"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Nissan Altima</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 209kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.858 Million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Nissan Altima</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/NISSAN/nissansentra.jpg">
+                        <div class = "overlay" id = "ssentra"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Nissan Sentra</p>
+                            <p class = "subheadcarName">Year: 2023</p>
+                            <p class = "subheadcarName">Max Speed: 200kp/h</p>
+                            <p class = "subheadcarName">Price: ₱1.214 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Nissan Sentra</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/NISSAN/nissangtr.jpg">
+                        <div class = "overlay" id = "sgtr"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Nissan GT-R</p>
+                            <p class = "subheadcarName">Year: 2024</p>
+                            <p class = "subheadcarName">Max Speed: 319kp/h</p>
+                            <p class = "subheadcarName">Price: ₱12.445 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Nissan GT-R</p>
+                        </div>
+                    </div>
+                    <div class="popularcar-display-container">
+                        <img class = "popularcar-display" src = "../pictures/popular cars/NISSAN/nissanversa.webp">
+                        <div class = "overlay" id = "sversa"></div>
+                        <div class ="tooltip">
+                            <p class = "headcarName">Nissan Versa</p>
+                            <p class = "subheadcarName">Year: 2019</p>
+                            <p class = "subheadcarName">Max Speed: 192kp/h</p>
+                            <p class = "subheadcarName">Price: 2.409 million</p>
+                        </div>
+                        <div class = "carName">
+                            <p>Nissan Versa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class = "navigation">
+                <button onclick="bckbtn()" class = "button">Back</button>
+                <div class = "navigation1-numbers active">
+                    <p onclick = "go1()" class = "n1 active">1</p>
+                    <p class="n2">2</p>
+                    <p class="n3">3</p>
+                    <p class="n4">4</p>
+                    
+                </div>
+                <div class="navigation2-numbers">
+                    <p class="n45">4</p>
+                    <p class = "n5">5</p>
+                    <p class="n6">6</p>
+                    <p class="n7">7</p>
+                </div>
+                <button onclick="nextbtn()" class = "button">Next</button>
+            </div>
+        </main>
+    
+    <script src = "../script/index2/header.js"></script>
+    <script src = "../script/index2/pageone.js"></script>
+    <script src = "../script/index2/navigation.js"></script>
+    <script src = "../script/index2/model.js"></script>
+</body>
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "../styles/index1/header.css">
+        <link rel = "stylesheet" href = "../styles/index1/general.css">
+        <link rel = "stylesheet" href = "../styles/index1/media.css">
+        <link rel = "stylesheet" href = "../styles/index1/background.css">
+        <link rel = "stylesheet" href = "../styles/index1/pageOnebody.css"> 
+        <link rel = "stylesheet" href = "../styles/index1/pageTwobody.css">
+        <link rel = "stylesheet" href = "../styles/index1/pageThreebody.css">
+        <link rel = "stylesheet" href = "../styles/index1/keyframes.css">
+        <link rel = "stylesheet" href = "../styles/index1/about.css">
+        <link rel = "stylesheet" href = "../styles/index1/services.css">
+        <link rel = "stylesheet" href = "../styles/index1/creator.css">
+        <link rel = "stylesheet" href = "../styles/index1/pageFourbody.css">
+        <link rel = "website icon" type="png" href = "../pictures/logos/ctlogo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Cartify - Find Your Dream Car</title>
+    </head>
+    <body>
+        <header class = "header-container" id = "header">
+            <nav class = "nav-background">
+                <div class = "nav-background-container">
+                    <div class = "left-section">
+                        <h1 class = "text-icon" id="moveIcon">CARTIFY</h1>
+                    </div>
+                    <div class = "right-section">
+                        <button class = "nav-button active" id = "home" onclick = "showHome(); scrollToSection('one')" data-target="one">Home</button>
+                        <button class = "nav-button" id = "about" onclick = "showAbout()" data-target="aboutPage">About</button>
+                        <button class = "nav-button" id = "services" onclick = "showServices()" data-target="aboutServices">Services</button>
+                        <button class = "nav-button" id = "creator" onclick="showCreator()" data-target="aboutCreator">From Creator</button>
+                    </div>
+                    <div class = "right-section2">
+                        <img onclick="rotateFull1()" id="dropdown" class = "hamburger-menu-icon" src = "../pictures/icons/hamburger-menu.svg">
+                        <div class = "menu">
+                            <div>
+                                <p onclick = "showHome(); scrollToSection('one')" data-target="one">Home</p>
+                            </div>
+                            <div>
+                                <p id = "about" onclick = "showAbout()" data-target="aboutPage">About</p>
+                            </div>
+                            <div>
+                                <p id = "services" onclick = "showServices()" data-target="aboutServices">Services</p>
+                            </div>
+                            <div>
+                                <p id = "creator" onclick="showCreator()" data-target="aboutCreator">Creator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div id = "container">
+            <section class = "one" id = "one">
+                <div class = "header-container-bg"></div>
+                <div class = "p1-body-image">
+                    <div>
+                        <p class = "finddream">Find Your Dream Car</p>
+                    </div>
+                    <div>
+                        <div>
+                            <p class = "cartifyDescription" >Where Dreams Drive Home. Discover the perfect fusion of passion and precision with our automotive expertise.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class = "car-background" src="../pictures/cars/toyotasupra.png">
+                    </div>
+                    <div>
+                        <div>
+                            <button id = "goToIndex2" class = "pageOnetext-button">Explore Cars</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <section class = "two" id = "two">
+                <div class = "brandicon-container">
+                    <div class = "carbrand-container">
+                        <p class = "carbrand-text">Car Brands</p>
+                    </div>
+                    <div class = "logo-cont">
+                        <div id="logodrp" class = "logodrpt">
+                            <img onclick="rotateFull2()" class = "showMore" src="../pictures/icons/icons8-plus.svg">
+                        </div>
+                        <div class = "logoMenu">
+                            <div onclick="window.open('https://www.audi.ph/sea/web/ph.html/')">
+                                <p>Audi</p>
+                            </div>
+                            <div onclick="window.open('https://www.bmw.com/en/index.html')">
+                                <p>BMW</p>
+                            </div>
+                            <div onclick="window.open('https://www.ferrari.com/en-EN')">
+                                <p>Ferrari</p>
+                            </div>
+                            <div onclick="window.open('https://www.ford.com.ph/')">
+                                <p>Ford</p>
+                            </div>
+                            <div onclick="window.open('https://automobiles.honda.com/')">
+                                <p>Honda</p>
+                            </div>
+                            <div onclick="window.open('https://www.mercedes-benz.ph/')">
+                                <p>Mercedes</p>
+                            </div>
+                            <div onclick="window.open('https://www.nissan.ph/')">
+                                <p>Nissan</p>
+                            </div>
+                            <div onclick="window.open('https://www.nissan.ph/')">
+                                <p>Chevrolet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "logo-container">
+                        <div class = "tooltip-container">
+                            <img class = "brandiconaudi" src = "../pictures/logos/icons8-audi-5000.png" onclick="window.open('https://www.audi.ph/sea/web/ph.html/')">
+                            <div class = "tooltip">
+                                <p>Audi</p>
+                            </div>
+                        </div>
+                        <div class = "tooltip-container">
+                            <img class = "brandiconbmw" src = "../pictures/logos/icons8-bmw.svg" onclick="window.open('https://www.bmw.com/en/index.html')">
+                            <div class = "tooltip">
+                                <p>BMW</p>
+                            </div>
+                        </div>
+                        <div class = "tooltip-container">
+                            <img class = "brandiconferrari" src = "../pictures/logos/icons8-ferrari-500.svg" onclick="window.open('https://www.ferrari.com/en-EN')">
+                            <div class = "tooltip">
+                                <p>Ferrari</p>
+                            </div>
+                        </div>
+                        <div class = "tooltip-container">
+                            <img class = "brandiconford" src = "../pictures/logos/icons8-ford-480.png" onclick="window.open('https://www.ford.com.ph/')">
+                            <div class = "tooltip">
+                                <p>Ford</p>
+                            </div>
+                        </div>
+                        <div class = "tooltip-container">
+                            <img class = "brandiconhonda" src = "../pictures/logos/icons8-honda.svg" onclick="window.open('https://automobiles.honda.com/')">
+                            <div class = "tooltip">
+                                <p>Honda</p>
+                            </div>
+                        </div>
+                        <div class = "tooltip-container">
+                            <img class = "brandiconmercedes" src = "../pictures/logos/icons8-mercedes.svg" onclick="window.open('https://www.mercedes-benz.ph/')">
+                            <div class = "tooltip">
+                                <p>Mercedes Benz</p>
+                            </div>
+                        </div>
+                        <div class = "tooltip-container">
+                            <img class = "brandiconnissan" src = "../pictures/logos/icons8-nissan.svg" onclick="window.open('https://www.nissan.ph/')">
+                            <div class = "tooltip">
+                                <p>Nissan</p>
+                            </div>
+                        </div>
+                        <div class = "tooltip-container">
+                            <img class = "brandiconchevy" src = "../pictures/logos/icons8-chevrolet.svg" onclick="window.open('https://www.nissan.ph/')">
+                            <div class = "tooltip">
+                                <p>Chevrolet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "featuredcar-container">
+                    <div class = "featuredcar-text-container">
+                        <p class = "featuredcars-text">Featured Cars</p>  
+                    </div>
+                    
+                    <div class = "featuredcardisplay-container">
+                        <div class = "featuredcardisplay">
+                            <div id = "eray">
+                                <img class = "featuredcar1" src = "../pictures/cars/corvetteeray.avif">
+                            </div>
+                            <div class = "car-info">
+                                <div>
+                                    <div>
+                                        <p class = "car-date">2023</p>
+                                        <p class = "car-name">Chevrolet Corvette E-Ray</p>
+                                        <p class="car-price">₱12,572,000</p>
+                                    </div>
+                                    <div class = "location-container">
+                                        <img class = "location-logo" src="../pictures/icons/location_8025352.png">
+                                        <p class = "car-made">Kentucky</p>
+                                    </div>
+                                </div>
+                                <div class = "carfeature">
+                                    <div class = "features-container">
+                                        <img class = "features2" src = "../pictures/icons/icons8-speed-64.png">
+                                        <p class="features-text">183 mph</p>
+                                    </div>
+                                    <div class = "features-container">
+                                        <img class = "features2" src = "../pictures/icons/icons8-gear-stick-50.png">
+                                        <p class="features-text">Automatic</p>
+                                    </div>
+                                    <div class = "features-container">
+                                        <img class = "features2" src = "../pictures/icons/icons8-eco-fuel-50.png">
+                                        <p class="features-text">Gasoline</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "featuredcardisplay2">
+                            <div class = "audir8-container">
+                                <div id="r8">
+                                    <img class = "featuredcar2" src = "../pictures/cars/audir8.jpg">
+                                </div>
+                                <div class = "car2-info">
+                                    <div class = "car2-container">
+                                        <div>
+                                            <p class = "car2-date">2006</p>
+                                            <p class = "car2-name">Audi R8</p>
+                                            <p class="car2-price">₱17,000,000</p>
+                                        </div>
+                                        <div class = "location-container">
+                                            <img class = "location2-logo" src="../pictures/icons/location_8025352.png">
+                                            <p class = "car2-made">Germany</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class = "carfeature2">
+                                        <div class = "features2-container">
+                                            <img class = "features2" src = "../pictures/icons/icons8-speed-64.png">
+                                            <p class="features2-text">204 mph</p>
+                                        </div>
+                                        <div class = "features2-container">
+                                            <img class = "features2" src = "../pictures/icons/icons8-gear-stick-50.png">
+                                            <p class="features2-text">Automatic</p>
+                                        </div>
+                                        <div class = "features2-container">
+                                            <img class = "features2" src = "../pictures/icons/icons8-eco-fuel-50.png">
+                                            <p class="features2-text">Gasoline</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class = "featuredcardisplay3">
+                            <div class = "blazerev-container">
+                                <div id="ev">
+                                   <img class = "featuredcar2" src = "../pictures/cars/blazerev.webp"> 
+                                </div>
+                                <div class = "car2-info">
+                                    <div class="car2-container">
+                                        <div>
+                                            <p class = "car2-date">2024</p>
+                                            <p class = "car2-name">Chevrolet Blazer EV</p>
+                                            <p class="car2-price">₱2,889,876</p>
+                                        </div>
+                                        <div>
+                                            <div class = "location-container">
+                                                <img class = "location2-logo" src="../pictures/icons/location_8025352.png">
+                                                <p class = "car2-made">Mexico</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class = "carfeature2">
+                                        <div class = "features2-container">
+                                            <img class = "features2" src = "../pictures/icons/icons8-speed-64.png">
+                                            <p class="features2-text">130 mph</p>
+                                        </div>
+                                        <div class = "features2-container">
+                                            <img class = "features2" src = "../pictures/icons/icons8-gear-stick-50.png">
+                                            <p class="features2-text">Manual</p>
+                                        </div>
+                                        <div class = "features2-container">
+                                            <img class = "features2" src = "../pictures/icons/icons8-eco-fuel-50.png">
+                                            <p class="features2-text">Electricity</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="three" id = "three">
+                <div class = "threecars-container">
+                    <img class = "threecars" src = "../pictures/backgrounds/3cars.jpg">
+                    <div class = "findthebestcar-container">
+                        <p class = "ftext">Find The Best Car</p>
+                        <p class = "findthebestcar-description">Discover, learn about, and select the<br> ideal car that suits your needs, whether<br> it's for off-roading adventures, navigating<br> mountain ranges, cruising on flat terrains,<br> or even racing at top speeds.<br> Explore your options right here</p>
+                        <button onclick = "showAbout()" data-target="aboutPage" class = "findoutmorebtn">Find Out More</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="four" id = "four">
+                <div class="pageFourbackground-container">
+                    <img class = "pageFourbackground" src="../pictures/backgrounds/guyincar.webp">  
+                </div>
+                
+                <div class = "information-container">
+                    <div class = "information">
+                        <div class="information-text">
+                            <div class = "p4-container">
+                                <div>
+                                    <p class ="p4-headtext">Cartify</p>
+                                </div>
+                                <div class = "p4-cartifyDescription">
+                                    <p class = "cartifyDescription-text-front">Where Dreams Drive Home. Discover the perfect fusion of passion and precision with our automotive expertise</p>
+                                </div>
+                            </div>
+                            <div class = "p4-container">
+                                <div class ="p4-headtext">
+                                    <p>Website</p>
+                                </div>
+                                <div class = "p4-cartifyDescription">
+                                    <p onclick = "showAbout()" data-target="aboutServices" class = "cartifyDescription-text">About</p>
+                                    <p onclick = "showServices()" data-target="aboutServices" class = "cartifyDescription-text">Services</p>
+                                    <p onclick = "showCreator()" data-target="aboutCreator" class = "cartifyDescription-text">Creator</p>
+                                </div>
+                            </div>
+                            <div class = "p4-container">
+                                <div class ="p4-headtext">
+                                    <p>Information</p>
+                                </div>
+                                <div class = "p4-cartifyDescription">
+                                    <p onclick="window.location.href = ('index2.html')" class = "cartifyDescription-text">Find a Car</p>
+                                    <p class = "cartifyDescription-text" onclick="window.location.href = ('index4.html')">Compare Car</p>
+                                </div>
+                            </div>
+                            <div class = "p4-container">
+                                <div class ="p4-headtext">
+                                    <p>Follow Us</p>
+                                </div>
+                                <div class = "p4-cartifyDescription">
+                                    <img onclick="window.open('https://facebook.com', '_blank')" class="p4-cartifyIcon" src="../pictures/logos/icons8-facebook.svg">
+                                    <img onclick="window.open('https://instagram.com', '_blank')" class="p4-cartifyIcon" src="../pictures/logos/icons8-instagram.svg">
+                                    <img onclick="window.open('https://store.steampowered.com/', '_blank')" class="p4-cartifyIcon" src="../pictures/logos/icons8-steam.svg">
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class = "aboutPage" id = "aboutPage">
+                <div class = "aboutCarimg-container">
+                    <img class = "aboutCarimg" src = "../pictures/backgrounds/redblackcar.webp">
+
+                    <div class = "about-container">
+                        <div class = "aboutPage-container">
+                            <div class = "aboutp">
+                                <p class="aboutPage-head">About Us</p>
+                                <p class = "aboutPage-description">Introducing My Project, a new website dedicated to showcasing the latest advancements in car safety technology. With a focus on providing users with an opportunity to view, compare, and learn about different car models, My Project aims to help people find the perfect car to meet their specific needs and preferences. Whether you're in the market for a family-friendly SUV or a fuel-efficient sedan, My Project is the one-stop destination for all your car research and comparison needs.
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="aboutServices" id="aboutServices">
+                <div class = "servicesText-container">
+                    <div>
+                        <p class = "servicesText-head">What Will You Get</p>
+                    </div>
+                    <div>
+                        <p class="servicesText-description">Learn on what our website offers</p>
+                    </div>
+                </div>
+                <div class = "services-container">
+                    <img class = "servicesbg-img" src = "../pictures/backgrounds/blurry-gradient-haikei.svg">
+                    <div class = "services-grid-relative">
+                        
+                        <div class="services-grid-container">
+                            <div class = "services-grid">
+                                <div class = "services-icon-container">
+                                    <img class="services-icon" src="../pictures/icons/icons8-filled-circle-100.png">
+                                </div>
+
+                                <div class ="services-grid-content">
+                                    <div class ="services-head-container" >
+                                        <p class ="services-head">Compare Cars</p>
+                                    </div>
+                                    <div>
+                                        <p class="services-description">Stack up models,specifications and prices side byside for a comparison</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class = "services-grid">
+                                <div class = "services-icon-container">
+                                    <img class="services-icon" src="../pictures/icons/icons8-filled-circle-100.png">
+                                </div>
+                                
+                                <div class = "services-grid-content">
+                                    <div class="services-head-container">
+                                        <p class = "services-head">See Specification</p>
+                                    </div>
+                                    <div>
+                                        <p class="services-description">Get in-depth insights into every aspect of your desired vehicle with detailed specifications</p>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            <div class = "services-grid">
+                                <div class = "services-icon-container">
+                                    <img class="services-icon" src="../pictures/icons/icons8-filled-circle-100.png">
+                                </div>
+                                
+                                <div class = "services-grid-content">
+                                    <div class="services-head-container">
+                                        <p class = "services-head">Pricing</p>
+                                    </div>
+                                    <div>
+                                        <p class="services-description">Access pricing information
+                                        for your preferred cars
+                                        </p>
+                                      
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class = "services-grid">
+                                <div class = "services-icon-container">
+                                    <img class="services-icon" src="../pictures/icons/icons8-filled-circle-100.png">  
+                                </div>
+                                
+                                <div class = "services-grid-content">
+                                    <div class = "services-head-container">
+                                        <p class = "services-head">User-Friendly</p>
+                                    </div>
+                                    <div>
+                                        <p class="services-description">Navigate seamlessly through our website and ensure a smooth browsing experience</p>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class = "services-grid">
+                                <div class = "services-icon-container">
+                                    <img class="services-icon" src="../pictures/icons/icons8-filled-circle-100.png">   
+                                </div>
+                                
+                                <div class = "services-grid-content">
+                                    <div class="services-head-container">
+                                        <p class = "services-head">Smooth Car Selection</p>
+                                    </div>
+                                    <div>
+                                        <p class="services-description">Navigate and explore the car selection with ease</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="aboutCreator" id="aboutCreator">
+                <div class = "creatorbg-container">
+                    <img class = "creatorbg" src="../pictures/backgrounds/blackcar.webp">
+                </div>
+                <div class="creatorMessage-container">
+                    <div class = "creator-img-container">
+                        <img class = "creator-img" src ="../pictures/backgrounds/creatorpic-fotor-bg-remover-20240427221215.png">
+                    </div>
+                    <div class="creatorMessage">
+                        <div class = "creatorMessage-text-container">
+                            <div class = "message">
+                                <p class = "creatorMessage-text">"Driving a car is like a dance, where the road becomes your stage and the engine, your partner.” <br><strong>--Ordovez--</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <script src="../script/index1/header.js"></script>
+        <script src="../script/index1/navigation.js"></script>
+    </body>
+</html>

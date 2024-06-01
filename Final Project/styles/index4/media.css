@@ -1,0 +1,77 @@
+@media screen and (max-width: 1039px)
+{
+
+    .middle-section
+    {
+        display: none;
+    }
+
+    .right-section
+    {
+        position: absolute;
+        width: 1fr;
+        display: flex;
+    }
+
+    .menu
+    {
+        top: -200px;
+    }
+}
+
+@media screen and (max-width: 1275px)
+{
+    .main
+    {
+        padding: 0 10px 0 10px;
+    }
+}
+
+@media screen and (max-width: 1065px)
+{
+    .chooseContainer
+    {
+        width: 300px;
+    }
+
+    .chooseContainer2
+    {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 610px)
+{
+    .main
+    {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 542px)
+{
+    .main
+    {
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .pluSign-container
+    {
+        display: none !important;
+    }
+
+    .plusSign
+    {
+        display: none !important;
+    }
+
+    .main
+    {
+        justify-content: center !important;
+        flex-direction: column !important;
+    }
+}
+

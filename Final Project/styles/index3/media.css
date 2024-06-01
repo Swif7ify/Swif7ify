@@ -1,0 +1,26 @@
+@media screen and (max-width: 1039px)
+{
+
+    .middle-section
+    {
+        display: none;
+    }
+
+    .right-section
+    {
+        position: absolute;
+        width: 1fr;
+        display: flex;
+    }
+
+    .menu
+    {
+        top: -200px;
+    }
+
+
+    .hamburger-menu-icon
+    {
+        margin-right: 40px !important;
+    }
+}

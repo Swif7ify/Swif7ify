@@ -1,0 +1,57 @@
+@media screen and (max-width: 1150px)
+{
+    .popular-cars-grid 
+    {
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media screen and (max-width: 833px)
+{
+    .popular-cars-grid 
+    {
+        grid-template-columns: 1fr;
+        margin: 0 50px 20px 50px;
+    }
+    .popularcar-display
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1039px)
+{
+
+    .middle-section
+    {
+        display: none;
+    }
+
+    .right-section
+    {
+        position: absolute;
+        width: 1fr;
+        display: block;
+    }
+
+    .menu
+    {
+        top: -200px;
+    }
+}
+
+@media (max-width: 1205px)
+{
+    .selectImg-container
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0 10px 0;
+        padding: 5px;
+        width: 100%;
+    }
+}

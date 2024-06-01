@@ -1,0 +1,370 @@
+.headTitle
+{
+    font-weight: 700;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;    
+    color: rgb(255, 90, 48);
+    text-align: center;
+}
+
+.title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 700;
+    flex-direction: column;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.subti
+{
+    color: rgb(206, 206, 206);
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.description
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    max-width: 500px;
+    text-align: justify;
+}
+
+[class^="information-container"]
+{
+    position: relative;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 10px 0 10px;
+    box-shadow: 0px 0px 2px #ffffff;
+    background: rgb(34, 39, 50); 
+}
+
+.carImg
+{
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carImg-container
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(34, 39, 50); 
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 800px;
+    margin-bottom: 20px;
+    margin: 10px 10px 20px 10px;
+    box-shadow: 0px 0px 2px #ffffff;
+}
+
+.cars, .carsa
+{
+    display: none;
+    animation: fadein 0.50s ease-in-out forwards;
+}
+
+.cars.active, .carsa.active
+{
+    display: block;
+}
+
+.tableHead
+{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: rgb(255, 90, 48);
+}
+
+.goUp
+{
+    position: fixed;
+    background-color: rgb(255, 90, 48);
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: -450px; 
+    transition: 0.50s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.goBack
+{
+    width: 50px;
+    height: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 0 0 10px 0;
+}
+
+.goBack-img
+{
+    width: 30px;
+    height: 30px;
+}
+
+
+table 
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+tr
+{
+    background: rgb(47, 53, 67);
+}
+
+th, td 
+{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+td
+{
+    color: white;
+}
+
+th 
+{
+    background-color: rgb(34, 39, 50); 
+    color: white;
+    font-weight: bold;
+}
+
+.main
+{
+    gap: 50px;
+    padding: 0 100px 0 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main::after
+{
+    position: fixed;
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.66);
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.15s ease;
+    display: none;
+}
+
+.main.active::after
+{
+    left: 0;
+    opacity: 1;
+    z-index:0;
+    display: block;
+    animation: fadein 0.50s forwards;
+}
+
+.choose-cont-container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.choose-cont-container h1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.chooseContainer
+{
+    background: #FF5A30;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    transition: bottom 0.50s ease-in-out, opacity 0.50s ease-in-out, top 0.50s ease-in-out;
+    border-radius: 15px;
+    height: 400px;
+    width: 500px;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    margin-bottom: 64px;
+}
+
+.chooseContainer2
+{
+    background: #FF5A30;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    transition: bottom 0.50s ease-in-out, opacity 0.50s ease-in-out, top 0.50s ease-in-out;
+    border-radius: 15px;
+    width: 500px;
+    height: 400px;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.chooseContainer.active, .chooseContainer2.active
+{
+    pointer-events: auto;
+}
+
+.selectImg
+{
+    width: 90px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.selectImg-container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0 10px 0;
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.selectImg-container:hover
+{
+    background-color: #9F391F;
+    border-left: 10px solid white;
+}
+
+.selectImg-container p
+{
+    text-indent: 20px;
+}
+
+.choose-cont, .choose-cont2
+{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    transform: scaleY(0.00);
+    transition: 0.40s ease-in-out;
+    opacity: 0;
+}
+
+.choose-cont.active, .choose-cont2.active
+{
+    transform: scaleY(1);
+    display: block;
+    opacity: 1;
+}
+
+.holder
+{
+    display: flex;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.cont1, .cont2
+{
+    overflow: hidden;
+    height: auto;
+    max-height: none;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2px;
+}
+
+.cont1.active, .cont2.active
+{
+    overflow: auto;
+    height: 100vh;
+    max-height: 72vh;
+}
+
+.addCars
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: white;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    animation: fadeInFromTop 0.50s ease-in-out forwards;
+}
+
+#adcars1 p.active, #adcars2 p.active
+{
+    background-color: #303a4d;
+}
+
+.addCars p
+{
+    background-color: #2B303A;
+    padding: 10px 20px 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.plusSign
+{
+    width: 100%;
+    max-width: 39px;
+}
+
+.plusSign-container
+{
+    display: flex;
+    padding: 1.7px;
+    background-color: rgb(34, 39, 50)
+}

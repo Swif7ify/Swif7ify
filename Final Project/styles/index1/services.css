@@ -1,0 +1,127 @@
+.servicesbg-img
+{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    overflow-y: hidden;
+    display: flex;
+    top: 0;
+    z-index: -1;
+}
+
+.servicesText-container
+{
+    color: white;
+    font-size: 2em;
+    z-index: 1;
+    width: 100%;
+    animation: fadeInFromTop 0.80s forwards;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.servicesText-head
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 101 !important;
+    overflow: hidden;
+}
+
+.servicesText-description
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(150, 150, 150);
+    font-size: 15px;
+}
+
+.services-grid-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 40px;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.services-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-grid
+{
+
+    height: 100%;
+    color: black;
+    border: 2px solid white;
+    border-radius: 15px;
+    position: relative;
+    background: linear-gradient(to top right, rgb(255, 255, 255), rgb(245, 245, 245) 100%);
+    animation: slideInFromRight 0.80s forwards;
+}
+
+.services-icon
+{
+    display: flex;
+    position: absolute;
+    width: 60px;
+    top: 30px;
+}
+
+.services-icon-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.services-head
+{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-align: center;
+    text-justify: inter-word;
+    display: flex;
+}
+
+.services-description
+{
+    text-align: center;
+
+    color: rgb(104, 104, 104);
+    margin-bottom: 5px;
+}
+
+.services-grid-relative
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-grid-content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 30px 20px 30px;
+}
+
+
+.services-grid:nth-child(2) 
+{
+    grid-column: span 2 ;
+}

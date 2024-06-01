@@ -1,0 +1,61 @@
+.p1-body-relative
+{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+}
+
+.p1-body-relative, .p1-body-image
+{
+    margin-top: 40px;
+}
+
+.pageOnetext-container
+{
+    height: 100%;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    flex-direction: column;
+    position: absolute;
+    animation: fadeInFromLeft 0.80s forwards;
+}
+
+.finddream
+{
+    text-align: center;
+    animation: fadeInFromTop 0.50s ease-in-out forwards;
+    color: white;
+    font-size: 5em;
+}
+
+.cartifyDescription
+{
+    text-align: center;
+    animation: fadeInFromTop 0.70s ease-in-out forwards;
+    color: rgb(185, 185, 185);
+    text-align: center;
+}
+
+.pageOnetext-button
+{
+    cursor: pointer;
+    background-color: #FF5A30;
+    color: white;
+    border: none;
+    border-radius: 19px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 35px 50px 35px 50px;
+    z-index: 100;
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: inset 0 0 0 0 #fe491c;
+    animation: fadeInFromBottom 0.60s ease-in-out forwards;
+}
+
+.pageOnetext-button:hover
+{
+    box-shadow: inset 250px 0 0 0 #fd4f24;  
+}

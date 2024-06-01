@@ -1,0 +1,224 @@
+.header-container
+{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000 !important;
+}
+
+.nav-background
+{
+    background-color: #2B303A;
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    transition: background-color 0.3s;
+}
+
+.nav-background-container
+{
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.left-section
+{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+
+
+.text-icon
+{
+    color: white;
+    margin-left: 30px;
+    padding: 0 3px 0 3px;
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.15s;
+    padding: 0 10px 0 10px;
+    transform: scale(0.8);
+    transition: outline 0.15s;
+}
+
+.text-icon a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+.text-icon:hover 
+{
+    outline: 3px solid white;
+}
+
+.middle-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin-right: 30px; 
+}
+
+.search-bar
+{
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
+    padding-left: 5px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    font-size: 17px;
+    box-shadow: inset 0px 0px 10px #868585;
+}
+
+.search-bar:focus
+{
+    outline: 1px solid #ff9100;
+}
+
+.search-icon
+{
+    width: 35px;
+    height: 25px;
+}
+
+.search-button
+{
+    background: #ff9100;
+    border: none;
+    height: 31.9px;
+    border-radius: 0px 6px 6px 0px;
+    margin-left: -47px
+}
+
+.search-button:hover
+{
+    opacity: 0.80;
+}
+
+.search-button:active
+{
+    background: #ca7200;;
+}
+
+.right-section
+{  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+
+.right-section button
+{
+    cursor: pointer;
+    padding: 18.9px;
+    border: none;
+    margin-right: 19px;
+    background-color: inherit;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: inset 0 0 0 0 white;
+    transition: background-color 0.3s ease-in-out,
+    color 0.3s ease-out,
+    border-bottom 0.01s ease-in-out,
+    box-shadow 0.5s ease-in-out, padding-bottom 0.02s ease-in-out, border-bottom 0.02s ease-in-out;
+}
+
+.scrolllock
+{
+    overflow: hidden;
+}
+
+.right-section button.active
+{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: inset 10px 10px 10px 250px white;
+    color: black;
+    padding-bottom: 13.9px;
+    border-bottom: 5px solid #FF5A30;
+}
+
+.transparent-bg 
+{
+    background-color: transparent;
+}
+
+.right-section2
+{
+    display: none;
+    position: relative;
+    width: 100%;
+    justify-content: end;
+    z-index: 1000 !important;
+    margin-right: 50px;
+}
+
+.menu
+{
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    animation: slideInFromBottomIndex2 0.50s ease-in-out forwards;
+    background-color: #2b303a;
+    color: white;
+    padding: 30px;
+    line-height: 40px;
+    transition: all 0.50s ease-in-out;
+    z-index: 101;
+}
+
+.menu.active
+{
+    top: -200px;
+    opacity: 1;
+    animation: slideInFromTopIndex2 0.50s ease-in-out forwards;
+    z-index: 101;
+}
+
+.menu p
+{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 101;
+}
+
+.menu p:hover
+{
+    background: rgb(255, 136, 0);
+
+}
+
+.hamburger-menu-icon
+{
+    max-width: 40px;
+    cursor: pointer;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 101 !important;
+}
+
+.rotating
+{
+    animation: rotate360 0.70s ease-in-out forwards;
+}

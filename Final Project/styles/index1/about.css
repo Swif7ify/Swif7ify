@@ -1,0 +1,95 @@
+.aboutCarimg-container
+{
+    position: relative;
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+.aboutCarimg
+{
+    position: absolute;
+    width: 100vw !important;
+    height: 100vh !important;
+    object-fit: cover;
+    object-position: center;
+    overflow-y: hidden;
+    display: flex;
+}
+
+.aboutp
+{
+    background-color: rgba(166, 135, 135, 0.2);
+    padding: 50px 30px 50px 30px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutPage-container
+{
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+    animation: fadeInFromLeft 0.80s forwards;
+    height: 100%;
+
+}
+
+.about-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+
+.aboutPage-head
+{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutPage-head::after 
+{
+    position: fixed;
+    content: '';
+    background: orange;
+    transition: right 0.15s ease-in-out, left 0.15s ease-in-out;
+    left: 300px;
+    right: 300px;
+    margin-top: 65px;
+    height: 2px;
+    z-index: 101;
+}
+
+.aboutp:hover ::after
+{
+    left: 250px;
+    right: 250px;
+}
+
+
+.aboutPage-description
+{
+    text-align: center;
+    font-size: 20px;
+    line-height: 35px;
+}
+
