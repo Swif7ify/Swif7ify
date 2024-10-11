@@ -1,4 +1,4 @@
-Hello there 👋, Welcome and nice to meet you!
+Hello there 👋, Welcome to my Code Showcase and nice to meet you!
 
 ![Purple Modern Technology LinkedIn Background Photo](https://github.com/user-attachments/assets/888aeb1d-371c-4508-a46b-47a3990ecb3c)
 
