@@ -13,7 +13,7 @@ I love to code especially <strong>full stack web development</strong>, I also li
 
 **Skills:**
 <br>
-Java | Java Swing | Python | HTML5 | Pure CSS | Javascript 
+Java | Java Swing | Python | HTML5 | Pure CSS | Javascript | Tailwind
 
 **Tools:**
 <br>
