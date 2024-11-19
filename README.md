@@ -23,6 +23,7 @@ Java | Java Swing | Python | HTML5 | Pure CSS | Javascript | Tailwind
 <img src="https://github.com/user-attachments/assets/e89b795f-1bbe-43ee-b709-04d7ac2f026e" width="50px" height="50px">
 <img src="https://github.com/user-attachments/assets/26b6575e-2e49-4e6b-81ad-8e3969ee70af" width="50px" height="50px">
 <img src="https://github.com/user-attachments/assets/ff109e52-6704-405d-806c-fb5185ca38d6" width="50px" height="50px">
+<img src="https://github.com/user-attachments/assets/33a5e491-d923-4094-a268-81a552686cb2" width="50px" height="50px">
 
 - 👋 Hi, I’m @Swif7ify
 - 👀 I'm interested in computer hardware and programming.
@@ -31,10 +32,10 @@ Java | Java Swing | Python | HTML5 | Pure CSS | Javascript | Tailwind
 - 😄 Pronouns: he/him/
 - ⚡ Fun fact: I learned Japanese こにちは.
 
+
 <a href="https://github.com/Swif7ify">
   <img src="https://github.com/user-attachments/assets/d7854e37-b19c-4ef9-a413-070b4d5756fa" width="50px" height="50px">
 </a>
-
 <a href="www.linkedin.com/in/earl-romeo-ordovez-a73a36322">
   <img src="https://github.com/user-attachments/assets/dfa2093a-d145-4312-aef1-3f03cf754349" width="50px" height="50px">
 </a>
