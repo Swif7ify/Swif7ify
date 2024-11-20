@@ -10,7 +10,7 @@ I have huge interest in programming📝 mainly in <strong>Python🐍</strong> an
 Currently a college student🧑‍🏫 at <strong>Gordon College</strong>. Studying and learning new expriences while maintaining good GPA of 1.3 or 92
 
 I love to code especially <strong>full stack web development</strong>, I also like money💵<br>
-Send me money to stonk my career: [Paypal](https://paypal.me/EarlOrdovez) | [Maya](https://github.com/user-attachments/assets/664517d4-09c4-46b6-81d7-5a6ebb6af6ed)
+Send me donation to stonk my career: [Paypal](https://paypal.me/EarlOrdovez) | [Maya](https://github.com/user-attachments/assets/664517d4-09c4-46b6-81d7-5a6ebb6af6ed)
 
 **Skills:**
 <br>
