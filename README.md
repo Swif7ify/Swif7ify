@@ -28,22 +28,15 @@ Java | Java Swing | Python | HTML5 | Pure CSS | Javascript | Tailwind
 - 👋 Hi, I’m @Swif7ify
 - 👀 I'm interested in computer hardware and programming.
 - 🌱 I’m currently learning as much programming language I can learn.
-- 📫 How to reach me: (linkedIn, Gmail).
+- 📫 How to reach me: (linkedIn, Email).
 - 😄 Pronouns: he/him/
 - ⚡ Fun fact: I learned Japanese こにちは.<br>
 
 
 
 **Contact Me**<br>
-
+- earl.coding@gmail.com
 
 [<img src="https://github.com/user-attachments/assets/d7854e37-b19c-4ef9-a413-070b4d5756fa" width="50px" height="50px">](https://github.com/Swif7ify)
 [<img src="https://github.com/user-attachments/assets/dfa2093a-d145-4312-aef1-3f03cf754349" width="50px" height="50px">](https://www.linkedin.com/in/earl-romeo-ordovez-a73a36322)
 [<img src="https://github.com/user-attachments/assets/0b695462-9e46-4830-aaa5-ce9323f7381e" width="50px" height="50px">](https://rinubi.itch.io)
-[<img src="https://github.com/user-attachments/assets/845fb485-b626-4810-9cf9-a65f4cee1653" width="50px" height="50px">](https://earl.coding@gmail.com)
-
-
-
-  
-
-
