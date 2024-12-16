@@ -14,7 +14,7 @@ Send me donation to stonk my career: [Paypal](https://paypal.me/EarlOrdovez) | [
 
 **Skills:**
 <br>
-Java | Java Swing | Python | HTML5 | Pure CSS | Javascript | Tailwind
+Java | Java Swing | Python | HTML5 | Pure CSS | Javascript | Tailwind | Vue | PHP
 
 **Tools:**
 <br>
@@ -25,6 +25,8 @@ Java | Java Swing | Python | HTML5 | Pure CSS | Javascript | Tailwind
 <img src="https://github.com/user-attachments/assets/26b6575e-2e49-4e6b-81ad-8e3969ee70af" width="50px" height="50px">
 <img src="https://github.com/user-attachments/assets/ff109e52-6704-405d-806c-fb5185ca38d6" width="50px" height="50px">
 <img src="https://github.com/user-attachments/assets/33a5e491-d923-4094-a268-81a552686cb2" width="50px" height="50px">
+<img src="https://github.com/user-attachments/assets/081010e7-6ea9-4931-a08f-a881b791f688" width="50px" height="50px">
+<img src="https://github.com/user-attachments/assets/b0b2c77d-410d-4dbc-ac21-c73d529ce0c2" width="50px" height="50px">
 
 - 👋 Hi, I’m @Swif7ify
 - 👀 I'm interested in computer hardware and programming.
