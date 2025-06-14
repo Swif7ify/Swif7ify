@@ -5,16 +5,12 @@ Hello there 👋, Welcome to my Code Showcase and nice to meet you!
 
 Hello! My name is <strong>Earl Romeo Ordovez</strong>, I am from Olongapo City, Zambales Philippines taking BS Information Technology✔️
 
-I have huge interest in programming📝 mainly in <strong>Python🐍</strong> and I'm well mannered🕶 when it comes to web design, <strong>UI</strong> and <strong>UX design</strong>📁 and <strong>web development!</strong> Currently improving my programming skills and full stack web developement📈 and ready to tackle <strong>game development</strong>💻 in the near future.
+I have huge interest in programming📝 mainly in <strong>Python🐍</strong> and I'm well mannered🕶 when it comes to web design, <strong>UI</strong> and <strong>UX design</strong>📁 and <strong>web development!</strong> Currently improving my programming skills and full stack web developement📈 and learning <strong>game development</strong>💻.
 
 Currently a college student🧑‍🏫 at <strong>Gordon College</strong>. Studying and learning new expriences while maintaining good GPA of 1.3 or 92
 
 I love to code especially <strong>full stack web development</strong>, I also like money💵<br>
 Send me donation to stonk my career: [Paypal](https://paypal.me/EarlOrdovez) | [Maya](https://github.com/user-attachments/assets/664517d4-09c4-46b6-81d7-5a6ebb6af6ed)
-
-**Skills:**
-<br>
-Java | Java Swing | Python | HTML5 | Pure CSS | Javascript | Tailwind | Vue | PHP | Blender | C++ 
 
 **Tools:**
 <br>
