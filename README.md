@@ -26,20 +26,25 @@ Send me donation to stonk my career: [Paypal](https://paypal.me/EarlOrdovez) | [
 <img src="https://github.com/user-attachments/assets/ba24ac12-4c73-4909-997c-ac677065d33f" width="50px" height="50px">
 <img src="https://github.com/user-attachments/assets/e444dd6c-99e8-4178-9b34-1ee625dc04af" width="50px" height="50px">
 
-**Github Stats:**
-<br>
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=swif7ify&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117)
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=swif7ify&theme=radical&hide_border=true&background=0D1117)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=swif7ify&layout=compact&theme=radical&hide_border=true&bg_color=0D1117)
-
-- 👋 Hi, I’m @Swif7ify
+- 👋 Hi, I'm @Swif7ify
 - 👀 I'm interested in computer hardware and programming.
-- 🌱 I’m currently learning as much programming language I can learn.
+- 🌱 I'm currently learning as much programming language I can learn.
 - 📫 How to reach me: (linkedIn, Email).
 - 😄 Pronouns: he/him/
-- ⚡ Fun fact: I learned Japanese こにちは.<br>
+- ⚡ Fun fact: I learned Japanese こにちは.
+
+## **Github Stats:**
+
+<div align="center">
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=swif7ify&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&count_private=true"/>
+  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=swif7ify&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&langs_count=8"/>
+</div>
+
+<div align="center">
+  
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=swif7ify&theme=radical&hide_border=true&background=0D1117)
+
+</div>
 
 
 
