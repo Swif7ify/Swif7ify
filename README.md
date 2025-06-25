@@ -36,13 +36,13 @@ Send me donation to stonk my career: [Paypal](https://paypal.me/EarlOrdovez) | [
 ## **Github Stats:**
 
 <div align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=swif7ify&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&count_private=true"/>
-  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=swif7ify&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&langs_count=8"/>
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=Swif7ify&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&count_private=true"/>
+  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Swif7ify&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&langs_count=8"/>
 </div>
 
 <div align="center">
   
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=swif7ify&theme=radical&hide_border=true&background=0D1117)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Swif7ify&theme=radical&hide_border=true&background=0D1117)
 
 </div>
 
