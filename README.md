@@ -27,6 +27,9 @@ Send me donation to stonk my career: [Paypal](https://paypal.me/EarlOrdovez) | [
 <img src="https://github.com/user-attachments/assets/b0b2c77d-410d-4dbc-ac21-c73d529ce0c2" width="50px" height="50px">
 <img src="https://github.com/user-attachments/assets/ba24ac12-4c73-4909-997c-ac677065d33f" width="50px" height="50px">
 <img src="https://github.com/user-attachments/assets/e444dd6c-99e8-4178-9b34-1ee625dc04af" width="50px" height="50px">
+<img src="https://github.com/user-attachments/assets/c770d20f-1710-437e-9356-8b378fdd948d" width="50px" height="50px">
+<img src="https://github.com/user-attachments/assets/2021cea7-a4a1-4ce0-9c45-e9b4ffc50106" width="50px" height="50px">
+<img src="https://github.com/user-attachments/assets/744828fe-b76e-4a62-9901-56daa9993809" width="50px" height="50px">
 
 - 👋 Hi, I'm @Swif7ify
 - 👀 I'm interested in computer hardware and programming.
