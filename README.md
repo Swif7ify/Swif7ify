@@ -30,10 +30,11 @@ Send me donation to stonk my career: [Paypal](https://paypal.me/EarlOrdovez) | [
 <img src="https://github.com/user-attachments/assets/c770d20f-1710-437e-9356-8b378fdd948d" width="50px" height="50px">
 <img src="https://github.com/user-attachments/assets/2021cea7-a4a1-4ce0-9c45-e9b4ffc50106" width="50px" height="50px">
 <img src="https://github.com/user-attachments/assets/744828fe-b76e-4a62-9901-56daa9993809" width="50px" height="50px">
+<img src="https://github.com/user-attachments/assets/82f12cb3-4cf6-42b3-9041-401c5301ab71" width="50px" height="50px">
 
 - 👋 Hi, I'm @Swif7ify
 - 👀 I'm interested in computer hardware and programming.
-- 🌱 I'm currently learning as much programming language I can learn.
+- 🌱 I'm currently learning as much programming language and frameworks I can learn.
 - 📫 How to reach me: (linkedIn, Email).
 - 😄 Pronouns: he/him/
 - ⚡ Fun fact: I learned Japanese こにちは.
