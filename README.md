@@ -31,8 +31,10 @@ Send me donation to stonk my career: [Paypal](https://paypal.me/EarlOrdovez) | [
 <img src="https://github.com/user-attachments/assets/2021cea7-a4a1-4ce0-9c45-e9b4ffc50106" width="50px" height="50px">
 <img src="https://github.com/user-attachments/assets/744828fe-b76e-4a62-9901-56daa9993809" width="50px" height="50px">
 <img src="https://github.com/user-attachments/assets/82f12cb3-4cf6-42b3-9041-401c5301ab71" width="50px" height="50px">
+<img src="https://github.com/user-attachments/assets/0227b18c-223c-4d70-ad48-568a2033fb7e" width="50px" height="50px">
 
 - 👋 Hi, I'm @Swif7ify
+
 - 👀 I'm interested in computer hardware and programming.
 - 🌱 I'm currently learning as much programming language and frameworks I can learn.
 - 📫 How to reach me: (linkedIn, Email).
