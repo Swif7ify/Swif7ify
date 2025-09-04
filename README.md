@@ -36,7 +36,7 @@ Send me donation to stonk my career: [Paypal](https://paypal.me/EarlOrdovez) | [
 - 👋 Hi, I'm @Swif7ify
 
 - 👀 I'm interested in computer hardware and programming.
-- 🌱 I'm currently learning as much programming language and frameworks I can learn.
+- 🌱 I'm currently learning as much programming language and frameworks I can.
 - 📫 How to reach me: (linkedIn, Email).
 - 😄 Pronouns: he/him/
 - ⚡ Fun fact: I learned Japanese こにちは.
