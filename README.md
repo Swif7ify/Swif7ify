@@ -48,7 +48,8 @@ Send me donation to stonk my career: [Paypal](https://paypal.me/EarlOrdovez) | [
 <br>
 
 ## 📫 Contact Me  
-- 📧 Email: **earl.coding@gmail.com**  
-- 🌐 [GitHub](https://github.com/Swif7ify)  
-- 💼 [LinkedIn](https://www.linkedin.com/in/earl-romeo-ordovez-a73a36322)  
-- 🎮 [Itch.io](https://rinubi.itch.io)  
+- Email: **earl.coding@gmail.com**  
+- [GitHub](https://github.com/Swif7ify)  
+- [LinkedIn](https://www.linkedin.com/in/earl-romeo-ordovez-a73a36322)  
+- [Itch.io](https://rinubi.itch.io)  
+- [Portfolio](https://swif7ify.github.io/Portfolio/)
