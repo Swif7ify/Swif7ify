@@ -1,7 +1,7 @@
 ## 👨‍💻 About Me  
 Hello there 👋, Welcome to my Code Showcase and nice to meet you!
 
-![Purple Modern Technology LinkedIn Background Photo](https://github.com/user-attachments/assets/888aeb1d-371c-4508-a46b-47a3990ecb3c)
+![Profile Bannerr](https://github.com/user-attachments/assets/590cf487-494a-4ef8-b10f-9d261df1e741)
 
 Hello! My name is <strong>Earl Romeo Ordovez</strong>, I am from Olongapo City, Zambales Philippines taking BS Information Technology✔️
 
