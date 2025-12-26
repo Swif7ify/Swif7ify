@@ -11,7 +11,7 @@ Take a look at my [Portfolio](https://swif7ify.github.io/Portfolio/)
 
 Currently a college student🧑‍🏫 at <strong>Gordon College</strong>. Studying and learning new expriences while maintaining good GPA of 1.3 or 92
 
-I love to code especially <strong>full stack web development</strong>, I also like money💵<br>
+I love to code especially <strong>full stack web development</strong><br>
 Send me donation to stonk my career: [Paypal](https://paypal.me/EarlOrdovez) | [Maya](https://github.com/user-attachments/assets/664517d4-09c4-46b6-81d7-5a6ebb6af6ed)
 
 <br>
@@ -44,6 +44,11 @@ Send me donation to stonk my career: [Paypal](https://paypal.me/EarlOrdovez) | [
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=swif7ify&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 </div>
 
+## ❤️ Sponsor
+
+If you are willing to sponsor any help would be greatly appreciated:
+
+👉 https://github.com/sponsors/Swif7ify
 
 <br>
 
