@@ -1,7 +1,7 @@
+
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/590cf487-494a-4ef8-b10f-9d261df1e741" alt="Earl Romeo Ordovez Banner" width="100%" />
-
+<img width="1584" height="396" alt="Blue and Green Modern Professional Business Advisor LinkedIn Banner" src="https://github.com/user-attachments/assets/37af6a58-e53a-4beb-8b9d-534ff544c83e" />
 <br/>
 
 # Hey, I'm Earl Romeo Ordovez 👋
