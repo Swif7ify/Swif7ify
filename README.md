@@ -5,7 +5,7 @@
 <br/>
 
 # Hey, I'm Earl Romeo Ordovez 👋
-[![Git-Spectre](https://git-spectre.vercel.app/api/badge/Swif7ify?style=card)](https://git-spectre.vercel.app/?u=Swif7ify)
+[![Git-Spectre](https://git-spectre.vercel.app/api/badge/Swif7ify?style=card&theme=tokyo)](https://git-spectre.vercel.app/?u=Swif7ify)
 ### Full-Stack Developer · Hardware Enthusiast · UI/UX Designer
 
 I build software that connects **clean interfaces, reliable systems, and physical hardware**.
